@@ -9,9 +9,9 @@
   <main id="main-content" class="site-main {{ .Params.page_class }} {{ anchorize $mainClass }}" role="main"
     data-barba="container" data-barba-namespace="{{ anchorize $namespace }}">
     <div class="smooth-scroll" data-scroll-container>
-      {{ block "content" . }}{{ end }}
-      {{ block "footer" . }}{{ partial "footer" . }}{{end}}
+      {{ block "main" . }}{{ end }}
     </div>
+    {{ block "footer" . }}{{ partial "footer" . }}{{end}}
   </main>
 </body>
 

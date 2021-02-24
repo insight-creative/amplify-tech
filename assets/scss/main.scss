@@ -10,10 +10,10 @@
 @import "globals/images";
 @import "globals/typography";
 @import "globals/background";
-@import "elements/hamburger";
-@import "elements/header";
-@import "elements/cta";
-@import "elements/footer";
+@import "utilities/hamburger";
+@import "utilities/header";
+@import "utilities/cta";
+@import "utilities/footer";
 @import "pages/default";
 @import "pages/home";
 @import "pages/services";
@@ -21,6 +21,5 @@
 @import "pages/blog";
 @import "pages/projects";
 @import "pages/contact";
-@import "pages/referral";
 @import "pages/privacy";
 @import "pages/sitemap";

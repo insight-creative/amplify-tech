@@ -3,23 +3,34 @@
     <meta name="referrer" content="no-referrer" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
     <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover" />
-    <title>{{ .Site.Title }} | {{ .Page.Title }}</title>
+    <title>
+        {{ if isset .Params "page_title" }}
+        {{ .Params.page_title }}
+        {{ else }}
+        {{ .Title }}
+        {{ end }} | {{ .Site.Title }}
+    </title>
 
-    <meta property="og:site_name" content="{{ .Site.Title }}">
+    <meta itemprop="name" content="{{ .Title }}" />
+    <meta itemprop="description" content="{{ .Description }}" />
+    <meta itemprop="image" content="{{ .Params.image }}" />
+
+    <meta property="og:site_name" content="{{ .Site.Title }}" />
     <meta property="og:type" content="website" />
     <meta property="og:title" content="{{ .Title }}" />
     <meta property="og:url" content="{{ .Permalink }}" />
     <meta property="og:locale" content="en_US" />
-
-    {{ if .Description }}
+    <meta property="og:image" content="{{ .Permalink }}{{ .Params.image }}" />
     <meta property="og:description" content="{{ .Description }}" />
-    <meta name="description" content="{{ .Description }}">
-    {{ end }}
+    <meta name="description" content="{{ .Description }}" />
 
     <link rel="canonical" href="{{ .Permalink }}" />
 
     <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="{{ .Title }}" />
+    <meta name="twitter:description" content="{{ .Description }}" />
     <meta name="twitter:site" content="@p4lm" />
+    <meta name="twitter:image" content="{{ .Permalink }}{{ .Params.image }}" />
 
     {{ $scss := resources.Get "scss/main.scss" | toCSS }}
     {{ $postcss := $scss | resources.PostCSS | minify }}

@@ -1,11 +1,5 @@
 {{ define "content" }}
 {{ partial "hero" . }}
-<section class="fade-wrapper padding-top-10 padding-bottom-2" data-scroll-section>
-  <div class="container">
-    <h2 class="g1">Get expert insights on home modifications and workers’ compensation.</h2>
-    <span class="underline-left"></span>
-  </div>
-</section>
 <section class="container blog-container" data-scroll-section>
   {{ range .Paginator.Pages.ByDate.Reverse }}
   <article class="fade-up blog-summary">

@@ -7,15 +7,28 @@ import { pageTransitionOut, pageTransitionIn, contentAnimation, updateMenu } fro
 barba.use(barbaPrefetch);
 gsap.registerPlugin(ScrollTrigger);
 
-const menuButton = document.querySelector(".menu-button-wrap");
 const menu = document.querySelector(".nav-list");
 const hamburger = document.querySelector(".hamburger");
 
-menuButton.addEventListener("click", toggleMobileMenu);
+hamburger.addEventListener("click", toggleMobileMenu);
 
 function toggleMobileMenu() {
-    menu.classList.toggle("nav-open");
-    hamburger.classList.toggle("is-active");
+    if(menu.classList.contains("nav-open")) {
+        this.setAttribute("aria-expanded", "false");
+        this.setAttribute("aria-label", "open mobile menu");
+        menu.classList.remove("nav-open");
+        hamburger.classList.remove("is-active");
+    } else {
+        menu.classList.add("nav-open");
+        hamburger.classList.add("is-active");
+        this.setAttribute("aria-expanded","true");
+        this.setAttribute("aria-label","close mobile menu");
+    }
+}
+
+function updateAria() {
+    hamburger.setAttribute("aria-expanded", "false");
+    hamburger.setAttribute("aria-label", "open mobile menu");
 }
 
 const selectAll = (e) => document.querySelectorAll(e);
@@ -42,6 +55,7 @@ function initPageTransitions() {
     // do something after the transition finishes
     barba.hooks.after(() => {
         homepageAnimations();
+        updateAria();
         ga('set', 'page', window.location.pathname);
         ga('send', 'pageview');
     });
