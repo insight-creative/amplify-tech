@@ -80,4 +80,4 @@ summaryLength = 30
 [[menu.main]]
     name = "Contact"
     url  = "/contact/"
-    weight = 5
+    weight = 6
