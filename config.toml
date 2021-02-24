@@ -1,6 +1,6 @@
 baseURL = "/"
 languageCode = "en-us"
-title = "Quintessence"
+title = "Amplify Technologies"
 enableRobotsTXT = true
 disableAliases = true
 summaryLength = 30
@@ -10,24 +10,16 @@ summaryLength = 30
 [params]
   logo = "images/logo.jpg"
   # Meta data
-  description = "Site Description here"
-  author = "Quintessence"
+  description = " "
+  author = "Amplify Technologies"
   # Contact Information
   mobile = " "
-  email = "demo@email.com"
+  email = " "
   location = " "
   disallowSearchEngines = true
   # Google Analitycs
   googleAnalytics = " " # Your ID# search 
   minifyBundles = true
-
-# CSS Plugins
-  [[params.plugins.css]]
-  link = "plugins/swiper/css/swiper-bundle.min.css"
-
-# JS Plugins
-  [[params.plugins.js]]
-  link = "plugins/swiper/js/swiper-bundle.min.js"
 
 # add redirects/headers
   [outputs]
@@ -66,11 +58,26 @@ summaryLength = 30
     weight = 1
 
 [[menu.main]]
-    name = "About"
-    url  = "about"
+    name = "Services"
+    url  = "/services/"
     weight = 2
 
 [[menu.main]]
-    name = "Blog"
-    url  = "post/"
-    weight = 10
+    name = "Projects"
+    url  = "/projects/"
+    weight = 3
+
+[[menu.main]]
+    name = "About"
+    url  = "/about/"
+    weight = 4
+
+[[menu.main]]
+    name = "Tech Tips"
+    url  = "/tech-tips/"
+    weight = 5
+
+[[menu.main]]
+    name = "Contact"
+    url  = "/contact/"
+    weight = 5
