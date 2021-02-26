@@ -1,0 +1,25 @@
+services:
+  service_item:
+    - name: Commercial Speakers, Pagers & Emergency
+      description: Rely on clear audio every day and in crises.
+      image: fox-valley-commercial-speakers-pagers-and-emergency-installation.jpg
+
+    - name: Audio & Lighting Controls
+      description: Enjoy energy efficiency, cost savings and more at the touch of a button.
+      image: fox-valley-audio-and-lighting-controls-installation.jpg
+
+    - name: Commercial Grade Cameras
+      description: From property to a production line, keep watch with clarity.
+      image: fox-valley-commercial-grade-camera-installation.jpg
+
+    - name: Access Control Systems
+      description: Feel protected and secure with reliable, easy-to-use systems.
+      image: fox-valley-access-control-systems-installation.jpg
+
+    - name: Surveillance Systems
+      description: Take comfort in 24/7 supervision of what you value most.
+      image: fox-valley-surveillance-systems-installation.jpg
+
+    - name: DirecTV Install & Service
+      description: Ease your mind and leave large-scale setups to the experts.
+      image: fox-valley-directv-installation.jpg

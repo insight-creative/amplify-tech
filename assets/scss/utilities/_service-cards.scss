@@ -1,0 +1,38 @@
+.service-cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 2rem;
+  margin: 2rem;
+}
+.service-card {
+  position: relative;
+  &__overlay {
+    background-color: $whiteOverlay;
+    height: 100%;
+    width: 100%;
+    position: relative;
+    z-index: 2;
+    padding: 6rem;
+    opacity: 0;
+    transition: 0.3s ease;
+  }
+  &__description {
+    font-size: 3rem;
+  }
+  &__image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    z-index: 1;
+  }
+  &:hover,
+  &:focus {
+    .service-card__overlay {
+      opacity: 1;
+    }
+  }
+}

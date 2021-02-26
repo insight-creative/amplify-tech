@@ -1,4 +1,11 @@
 // Colors
+$primaryColor: #2b3b93;
+$secondaryColor: #7881bc;
+$black: #232323;
+
+// overlays
+$whiteOverlay: rgba(255, 255, 255, 0.7);
+
 $lightOrange: #ef8f28;
 $medOrange: #f09028;
 $darkOrange: #c56727;
@@ -11,8 +18,8 @@ $orangeGradientReverse: linear-gradient(180deg, #c46627 0%, #f09028 100%);
 $blueGradient: linear-gradient(180deg, #38485a 0%, #1c252e 100%);
 $blueGradientReverse: linear-gradient(180deg, #1c252e 0%, #38485a 100%);
 // Fonts
-$primaryFont: "Roboto", sans-serif;
-$secondaryFont: "Frank Ruhl Libre", serif;
+$primaryFont: Helvetica, Arial, sans-serif;
+$secondaryFont: Arial, sans-serif;
 
 $mobileHeader: 70px;
 $desktopHeader: 140px;

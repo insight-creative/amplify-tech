@@ -8,7 +8,7 @@
         <img src="{{ site.Params.logo | absURL }}" alt="{{ site.Title }}" class="img-responsive dim" />
       </a>
     </div>
-    {{ with .Site.Menus.main }}
+      {{ with .Site.Menus.main }}
       <ul class="nav-list">
         {{ range . }}
           <li class="nav-list-item">
@@ -18,11 +18,17 @@
         {{ end }}
       </ul>
     {{ end }}
-    <button class="hamburger hamburger--slider" type="button" aria-label="open mobile menu" aria-expanded="false">
-      <span class="hamburger-box">
-        <span class="hamburger-inner"></span>
-      </span>
-    </button>
+      <button class="hamburger hamburger--slider" type="button" aria-label="open mobile menu" aria-expanded="false">
+        <span class="hamburger-box">
+          <span class="hamburger-inner"></span>
+        </span>
+      </button>
+      <a class="call-now" href="tel:920-759-9315">
+        <span class="link-text">
+          <strong>Call Now</strong>
+          <span>759-9315</span>
+        </span>
+        <img src="/images/phone.jpg" alt="{{ site.Title }}" class="img-responsive dim" />
+      </a>
   </nav>
-  
 </header>
