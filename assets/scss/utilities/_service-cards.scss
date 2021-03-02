@@ -60,6 +60,9 @@
     &__overlay {
       opacity: 1;
       padding: 2rem;
+      @include breakpoint(lg) {
+        padding: 6rem;
+      }
     }
     .service-card__heading,
     .service-card__description {
