@@ -61,7 +61,7 @@
       opacity: 1;
       padding: 2rem;
       @include breakpoint(lg) {
-        padding: 6rem;
+        padding: 6rem 2rem;
       }
     }
     .service-card__heading,
