@@ -1,0 +1,18 @@
+.latest-posts {
+  &__card {
+    border: 1px solid $primaryColor;
+    border-bottom: 10px solid $primaryColor;
+    margin: 10px;
+    @include breakpoint(md) {
+      max-width: 50%;
+    }
+  }
+  &__content {
+    padding: 4rem 2rem;
+    text-align: left;
+  }
+  &__image {
+    object-fit: cover;
+    height: 100%;
+  }
+}

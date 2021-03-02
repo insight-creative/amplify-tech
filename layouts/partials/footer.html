@@ -1,13 +1,47 @@
+<div class="pre-footer"></div>
 <footer class="footer" data-scroll-section>
-  <div class="footer__copyright flex-center">
-    <p>© {{ dateFormat "2006" now }} {{ .Site.Params.author }} All Rights Reserved.</p>
-    <nav class="footer__nav">
-      <ul class="footer__nav-list">
-        <li class="footer__nav-list-item"><a href="#" class="footer__nav-item">Privacy Policy</a> | </li>
-        <li class="footer__nav-list-item"><a href="#" class="footer__nav-item">Sitemap</a> | </li>
-        <li class="footer__nav-list-item"><a href="#" class="footer__nav-item">Contact Us</a></li>
-      </ul>
-    </nav>
+  <div class="footer__content container-wide flex flex-column flex-row-m">
+    <div class="footer__contact w-100 w-40-m flex">
+      <div class="footer__map w-50">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d11421.443322110008!2d-88.2643127!3d44.3025321!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xf3bdbef01e1e40af!2sR%26R%20Technologies%2C%20Inc.!5e0!3m2!1sen!2sus!4v1614620618122!5m2!1sen!2sus" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+      </div>
+      <div class="w-50">
+        <h6>Contact</h6>
+        <a href="https://g.page/randrtech?share" target="_blank" rel="noopener"><p>{{ .Site.Params.addressLine1 }}<br>{{ .Site.Params.addressLine2 }}</p></a>
+        <a href="tel:{{ .Site.Params.phone }}"><p>{{ .Site.Params.phone }}</p></a>
+        <a href="mailto:{{ .Site.Params.email }}"><p>{{ .Site.Params.email }}</p></a>
+      </div>
+    </div>
+    <div class="footer__hours w-100 w-30-m">
+      <div class="footer__hours-inner">
+        <h6>Hours</h6>
+        <p>{{ .Site.Params.hoursMF }}<br>{{ .Site.Params.hoursSat }}<br>{{ .Site.Params.hoursSun }}</p>
+      </div>
+    </div>
+    <div class="footer__sitemap w-100 w-30-m flex">
+      <div class="w-50">
+        <h6>Site Map</h6>
+        {{ with .Site.Menus.main }}
+        <ul class="footer__nav-list">
+          {{ range . }}
+            <li class="footer__nav-list-item">
+              <a class="footer__nav-item" href="{{ .URL | absLangURL}}" aria-label="{{ .Name }}"
+                title="{{ .Name }}">{{ .Name }}</a>
+            </li>
+          {{ end }}
+        </ul>
+      {{ end }}
+      </div>
+      <div class="w-50">
+        <h6>Connect</h6>
+        <div class="footer__social">
+          {{ partial "svg-icons/facebook.svg" . }}
+          {{ partial "svg-icons/twitter.svg" . }}
+          {{ partial "svg-icons/flickr.svg" . }}
+          {{ partial "svg-icons/youtube.svg" . }}
+        </div>
+      </div>
+    </div>
   </div>
 </footer>
 {{ partial "scripts" . }}

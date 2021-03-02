@@ -1,0 +1,17 @@
+<div class="latest-posts flex flex-column flex-row-m">
+    {{ $pages := .Site.RegularPages }}
+    {{ $techTips := where $pages "Type" "tech-tips" }}
+    {{- range first 2 $techTips -}}
+        <div class="latest-posts__card">
+            <div class="latest-posts__card-inner flex">
+                <div class="latest-posts__content w-60">
+                    <h3 class="latest-posts__title">{{ .Title }}</h3>
+                    <p class="latest-posts__summary">{{ .Summary }}</p>
+                </div>
+                <div class="latest-posts__image-wrapper w-40">
+                    <img src="/images/{{ .Params.image }}" alt="{{ .Title }}" class="latest-posts__image">
+                </div>
+            </div>
+        </div>
+    {{ end }}
+</div>

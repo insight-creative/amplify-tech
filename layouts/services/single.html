@@ -1,0 +1,9 @@
+{{ define "main" }}
+    {{ partial "hero" .  }}
+    <div class="service container text-center padding-top-4 padding-bottom-4">
+        <h2>{{ .Title }}</h2>
+        <p class="service__description">{{ .Description }}</p>
+    </div>
+    {{ partial "full-service" . }}
+    {{ partial "services" . }}
+{{ end }}

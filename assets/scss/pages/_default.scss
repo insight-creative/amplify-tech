@@ -64,6 +64,26 @@
 }
 .hero,
 .short-hero {
+  &__overlay {
+    position: relative;
+    &:after {
+      height: 100%;
+      width: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      content: "";
+      z-index: 1;
+      background: rgb(0, 0, 0);
+      background: linear-gradient(
+        0deg,
+        rgba(0, 0, 0, 0.9) 0%,
+        rgba(255, 255, 255, 0) 10%,
+        rgba(255, 255, 255, 0) 90%,
+        rgba(0, 0, 0, 0.9) 100%
+      );
+    }
+  }
   &__inner {
     height: 100%;
     text-align: center;
@@ -89,12 +109,9 @@
 }
 .short-hero {
   position: relative;
-  margin-top: 70px;
-  @include breakpoint(sm) {
-    margin-top: 85px;
-  }
-  @include breakpoint(md) {
-    margin-top: 140px;
+  margin-top: $mobileHeader;
+  @include breakpoint(lg) {
+    margin-top: $desktopHeader;
   }
   &__inner {
     position: absolute;

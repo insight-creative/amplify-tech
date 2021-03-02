@@ -9,6 +9,36 @@ gsap.registerPlugin(ScrollTrigger);
 
 const menu = document.querySelector(".nav-list");
 const hamburger = document.querySelector(".hamburger");
+const navClasses = document.querySelector('.site-header');
+let scrollState = 0;
+
+var scrollTop = function() {
+  return window.scrollY;
+};
+
+var scrollDetect = function(collapse, expand) {
+  var currentScroll = scrollTop();
+  if (currentScroll > scrollState) {
+    collapse();
+  } else {
+    expand();
+  }
+  scrollState = scrollTop();
+};
+
+function collapseNav() {
+  navClasses.classList.remove('expand');
+  navClasses.classList.add('collapse');
+}
+
+function expandNav() {
+  navClasses.classList.remove('collapse');
+  navClasses.classList.add('expand');
+}
+
+window.addEventListener("scroll", function() {
+  scrollDetect(collapseNav, expandNav);
+});
 
 hamburger.addEventListener("click", toggleMobileMenu);
 
@@ -34,7 +64,36 @@ function updateAria() {
 const selectAll = (e) => document.querySelectorAll(e);
 
 function fadeInContent() {
-   
+    const fadeWrapper = document.querySelector(".fade-wrapper .container");
+    const fadeUp = document.querySelectorAll(".fade-up");
+
+    gsap.utils.toArray(fadeUp).forEach((fade) => {
+        gsap.from(fade, {
+            opacity: 0,
+            y: 20,
+            duration: .5,
+            ease: 'Power2.in',
+            scrollTrigger: {
+                trigger: fade,
+                start: "top bottom-=50",
+                toggleActions: "play none none reverse",
+            }
+        })
+    });
+    if (document.body.contains(fadeWrapper)) {
+        gsap.from(fadeWrapper, {
+            opacity: 0,
+            y: 20,
+            duration: .5,
+            ease: 'Power2.in',
+            delay: .5,
+            scrollTrigger: {
+                trigger: fadeWrapper,
+                start: "top bottom-=25",
+                toggleActions: "play none none reset",
+            }
+        });
+    }
 }
 
 function initZoom() {

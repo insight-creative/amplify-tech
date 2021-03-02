@@ -8,8 +8,8 @@
   {{ block "header" . }}{{ partial "header" . }}{{end}}
   <main id="main-content" class="site-main {{ .Params.page_class }} {{ anchorize $mainClass }}" data-barba="container" data-barba-namespace="{{ anchorize $namespace }}">
     {{ block "main" . }}{{ end }}
+    {{ block "footer" . }}{{ partial "footer" . }}{{end}}
   </main>
-  {{ block "footer" . }}{{ partial "footer" . }}{{end}}
 </body>
 
 </html>

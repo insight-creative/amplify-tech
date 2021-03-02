@@ -11,10 +11,14 @@ input,
 select,
 optgroup,
 textarea {
-  color: #58595b;
-  font-family: $secondaryFont;
-  font-size: 2.6rem;
-  line-height: 4rem;
+  color: $gray;
+  font-family: $primaryFont;
+  font-size: 2rem;
+  line-height: 3rem;
+  @include breakpoint(md) {
+    font-size: 2.6rem;
+    line-height: 4rem;
+  }
 }
 h1,
 h2,
@@ -22,7 +26,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: $primaryFont;
+  font-family: $secondaryFont;
   font-weight: 700;
   color: $primaryColor;
   line-height: 1.2em;
@@ -152,8 +156,11 @@ h6,
   color: $white;
 }
 .tagline {
-  font-size: 3.4rem;
+  font-size: 2.8rem;
   font-weight: 700;
   font-style: italic;
   color: $primaryColor;
+  @include breakpoint(md) {
+    font-size: 3.4rem;
+  }
 }

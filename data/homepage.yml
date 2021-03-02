@@ -7,3 +7,16 @@ projects:
   heading: We don’t want to brag … but we know a lot of people.
   copy: The biggest names in the Valley trust Amplify. Read more about how we’ve helped other clients and learn what’s possible with quality sight, sound and security.
   subheading: See our latest projects.
+  client:
+    - name: Appleton East Patriots
+      logo: appleton-east-patriots.jpg
+
+    - name: Encounter Church
+      logo: encounter-church.jpg
+
+blog:
+  heading: Tech Tips
+
+call_to_action:
+  heading: Let’s amplify your experience!
+  action: Contact us for a free consultation.

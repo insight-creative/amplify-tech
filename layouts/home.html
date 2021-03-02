@@ -1,0 +1,37 @@
+{{ define "main" }}
+{{ partial "hero" . }}
+{{ with site.Data.homepage.intro }}
+<div class="container text-center padding-top-4 padding-bottom-4">
+    <h1>{{ .heading }}</h1>
+    <p class="intro">{{ .copy }}  <span class="tagline">{{ .tagline }}</span></p>
+</div>
+{{ end }}
+{{ partial "home-services" . }}
+{{ with site.Data.homepage.projects }}
+<div class="container-wide text-center padding-top-4 padding-bottom-4">
+    <div class="lane-narrow">
+        <h2 class="g1">{{ .heading }}</h2>
+    </div>
+    <p>{{ .copy }}</p>
+</div>
+<div class="projects">
+    <div class="container text-center">
+        <h3 class="projects__heading text-white g1">{{ .subheading }}</h3>
+        <div class="projects__logo-container">
+            {{ with site.Data.homepage.projects }}
+                {{ range .client }}
+                    <img src="/images/{{ .logo }}" alt="{{ .name }}" class="projects__logo">
+                {{ end }}
+            {{ end }}
+        </div>
+    </div>
+</div>
+{{ end }}
+<div class="container text-center padding-top-4 padding-bottom-4">
+    {{ with site.Data.homepage.blog }}
+        <h3 class="g1">{{ .heading }}</h3>
+    {{ end }}
+    {{ partial "blog/blog-cards" . }}
+    {{ partial "cta" . }}
+</div>
+{{ end }}

@@ -1,0 +1,6 @@
+<div class="full-service container text-center padding-top-4 padding-bottom-4">
+    {{ with site.Data.services.services }}
+      <h2>{{ .heading }}</h2>
+      <p class="full-service__description">{{ .copy }}</p>
+    {{ end }}
+  </div>

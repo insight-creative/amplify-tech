@@ -1,13 +1,30 @@
 .service-cards {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(2, 1fr);
+  grid-template-columns: repeat(1, 1fr);
   gap: 2rem;
-  margin: 2rem;
+  margin: 0 2rem;
+  @include breakpoint(md) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  @include breakpoint(lg) {
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
 .service-card {
   position: relative;
+  a {
+    text-decoration: none;
+    height: 100%;
+    width: 100%;
+    &:hover,
+    &:focus {
+      color: $black;
+    }
+  }
   &__overlay {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     background-color: $whiteOverlay;
     height: 100%;
     width: 100%;
@@ -19,6 +36,7 @@
   }
   &__description {
     font-size: 3rem;
+    margin-bottom: 0;
   }
   &__image {
     position: absolute;
@@ -33,6 +51,36 @@
   &:focus {
     .service-card__overlay {
       opacity: 1;
+    }
+  }
+}
+.services {
+  .service-card {
+    box-shadow: 0 0 25px $blueShadow;
+    &__overlay {
+      opacity: 1;
+      padding: 2rem;
+    }
+    .service-card__heading,
+    .service-card__description {
+      opacity: 1;
+      transition: 0.3s ease;
+    }
+    &__description {
+      color: $black;
+      font-size: 2rem;
+      line-height: 2.5rem;
+      max-width: 75%;
+    }
+    &:hover,
+    &:focus {
+      .service-card__heading,
+      .service-card__description {
+        opacity: 0;
+      }
+      .service-card__overlay {
+        opacity: 0.3;
+      }
     }
   }
 }

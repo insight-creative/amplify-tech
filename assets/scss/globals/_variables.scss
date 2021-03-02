@@ -1,10 +1,15 @@
 // Colors
 $primaryColor: #2b3b93;
 $secondaryColor: #7881bc;
+$lightBlue: #afd1ed;
+$gray: #58595b;
 $black: #232323;
+$tan: #c6bd9e;
 
 // overlays
-$whiteOverlay: rgba(255, 255, 255, 0.7);
+$whiteOverlay: rgba(255, 255, 255, 0.9);
+
+$blueShadow: rgba(43, 59, 147, 0.2);
 
 $lightOrange: #ef8f28;
 $medOrange: #f09028;
@@ -21,5 +26,5 @@ $blueGradientReverse: linear-gradient(180deg, #1c252e 0%, #38485a 100%);
 $primaryFont: Helvetica, Arial, sans-serif;
 $secondaryFont: Arial, sans-serif;
 
-$mobileHeader: 70px;
-$desktopHeader: 140px;
+$mobileHeader: 100px;
+$desktopHeader: 130px;

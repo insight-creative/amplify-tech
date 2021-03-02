@@ -15,9 +15,6 @@
   width: 96%;
   margin: 0 auto;
 }
-.logo-wrapper {
-  background-color: $white;
-}
 .brand-logo {
   img {
     width: 100%;
@@ -58,6 +55,7 @@
 }
 .nav-list-item {
   list-style-type: none;
+  padding: 2rem;
   @include breakpoint(md) {
     display: inline-block;
   }
@@ -66,44 +64,47 @@
   position: relative;
   text-decoration: none;
   color: $primaryColor;
-  padding: 2rem;
   font-size: 1.8rem;
   font-weight: 400;
   display: flex;
   align-items: center;
   white-space: nowrap;
+  &:after {
+    background: $primaryColor;
+    height: 2px;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    content: "";
+    opacity: 0;
+    transition: 0.3s ease;
+  }
+  @include breakpoint(md) {
+    &:hover,
+    &:focus {
+      color: $primaryColor;
+      &:after {
+        opacity: 1;
+      }
+    }
+  }
   @include breakpoint(lg) {
     font-size: 3rem;
   }
 }
 .current {
-  position: relative;
-  font-weight: 700;
-  &:before {
-    background: $orangeGradient;
-    height: 100%;
-    width: 5px;
+  &:after {
+    background: $primaryColor;
+    height: 2px;
+    width: 100%;
     position: absolute;
-    top: 0;
+    bottom: 0;
     left: 0;
     right: 0;
     content: "";
     opacity: 1;
-    @include breakpoint(md) {
-      height: 25px;
-      width: 100%;
-      top: -10px;
-    }
-  }
-}
-.nav-list-item:nth-child(7) {
-  .current {
-    &:before {
-      opacity: 0;
-      @include breakpoint(md) {
-        opacity: 0;
-      }
-    }
   }
 }
 .nav-open {
@@ -111,6 +112,7 @@
   opacity: 1;
   overflow: hidden;
   visibility: visible;
+  border-top: 3px solid $secondaryColor;
   .nav-list-item {
     animation: slideIn ease-in-out 0.5s forwards 0.5s;
     opacity: 0;
@@ -136,6 +138,10 @@
   .nav-list-item:nth-child(7) {
     animation-delay: 0.7s;
   }
+  .nav-item {
+    border-bottom: 1px solid $lightBlue;
+  }
+
   @keyframes slideIn {
     from {
       opacity: 0;
@@ -153,19 +159,64 @@
     display: none;
   }
 }
+.collapse {
+  @include breakpoint(md) {
+    animation: collapse 0.5s ease forwards;
+  }
+}
+
+// Open nav bar on scroll up
+.expand {
+  @include breakpoint(md) {
+    animation: expand 0.5s ease forwards;
+  }
+}
+
+@keyframes collapse {
+  from {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  to {
+    opacity: 0;
+    transform: translateY(-100%);
+  }
+}
+
+@keyframes expand {
+  from {
+    opacity: 0;
+    transform: translateY(-100%);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
 .call-now {
+  display: none;
   text-decoration: none;
-  display: flex;
   align-items: center;
   margin-right: 4rem;
+  font-size: 1.8rem;
+  @include breakpoint(md) {
+    display: flex;
+  }
+  @include breakpoint(lg) {
+    font-size: 2.6rem;
+  }
   .link-text {
     display: flex;
     flex-direction: column;
-    margin-right: 5px;
+    margin-right: 10px;
     font-weight: 500;
+    line-height: 1;
   }
   img {
-    max-width: 40px;
+    max-width: 28px;
     height: 100%;
+    @include breakpoint(lg) {
+      max-width: 40px;
+    }
   }
 }

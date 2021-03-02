@@ -13,10 +13,13 @@ summaryLength = 30
   description = " "
   author = "Amplify Technologies"
   # Contact Information
-  phone = "(920) 759-9315"
+  phone = "920-759-9315"
   email = "allie@randrtech.com"
-  address = "899 Progress Way,<br>Kaukauna, WI 54310"
-  hours = "Monday-Friday 9 am-4 pm<br>Saturdays 9 am-1 pm<br>Closed Sunday"
+  addressLine1 = "899 Progress Way,"
+  addressLine2 = "Kaukauna, WI 54310"
+  hoursMF = "Monday-Friday 9 am - 4 pm"
+  hoursSat = "Saturdays 9 am - 1 pm"
+  hoursSun = "Closed Sunday"
   disallowSearchEngines = true
   # Google Analitycs
   googleAnalytics = " " # Your ID# search 
