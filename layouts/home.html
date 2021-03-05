@@ -14,13 +14,13 @@
     </div>
     <p>{{ .copy }}</p>
 </div>
-<div class="projects">
+<div class="featured-projects">
     <div class="container text-center">
-        <h3 class="projects__heading text-white g1">{{ .subheading }}</h3>
-        <div class="projects__logo-container">
+        <h3 class="featured-projects__heading text-white g1">{{ .subheading }}</h3>
+        <div class="featured-projects__logo-container">
             {{ with site.Data.homepage.projects }}
                 {{ range .client }}
-                    <img src="/images/{{ .logo }}" alt="{{ .name }}" class="projects__logo">
+                    <img src="/images/{{ .logo }}" alt="{{ .name }}" class="featured-projects__logo">
                 {{ end }}
             {{ end }}
         </div>
