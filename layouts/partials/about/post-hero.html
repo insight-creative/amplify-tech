@@ -1,0 +1,15 @@
+<div class="post-hero bg-blue" data-scroll-section>
+  <div class="hero__inner short-hero__inner w-100 w-70-l">
+    <h1 class="hero__title short-hero__title text-white no-margin">
+      {{ .Page.Title }}
+    </h1>
+  </div>
+</div>
+<div class="container padding-top-2">
+  {{ partial "breadcrumbs" . }}
+  {{ if .Params.image }}
+      <img src="/images/staff/{{ .Params.image }}" alt="{{ .Title }} headshot">
+  {{ else }}
+      <img src="/images/staff/Headshot-Placeholder.jpg" alt="headshot placeholder">
+  {{ end }}
+</div>

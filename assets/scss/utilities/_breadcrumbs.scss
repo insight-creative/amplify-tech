@@ -1,0 +1,52 @@
+.breadcrumbs-nav {
+  color: $primaryColor;
+  margin: 0;
+  padding: 0;
+  li {
+    list-style-type: none;
+    position: relative;
+    &:after {
+      font-family: monospace;
+      position: absolute;
+      top: 2px;
+      left: -4px;
+      content: ">";
+      font-size: 1.6rem;
+      font-weight: 700;
+    }
+  }
+  li:first-of-type {
+    &:after {
+      display: none;
+    }
+  }
+  a {
+    margin: 0 1rem;
+    color: $primaryColor;
+    text-decoration: none;
+    font-size: 1.4rem;
+  }
+}
+.single-post,
+.single-product,
+.simple-hero {
+  .breadcrumbs-nav {
+    background-color: $white;
+    display: none;
+    @include breakpoint(md) {
+      display: flex;
+    }
+    &__wrapper {
+      width: 100%;
+      padding: 0;
+    }
+    li {
+      &:after {
+        color: $primaryColor;
+      }
+    }
+    a {
+      color: $primaryColor;
+    }
+  }
+}

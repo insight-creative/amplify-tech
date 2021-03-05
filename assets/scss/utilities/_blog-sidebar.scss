@@ -1,0 +1,18 @@
+.blog-sidebar {
+  @include breakpoint(md) {
+    margin-left: 2rem;
+  }
+  &__categories-list {
+    padding: 0;
+  }
+  &__categories-list-item {
+    list-style-type: none;
+    border-bottom: 1px solid $lightBlue;
+    padding: 1rem 0;
+    line-height: 2rem;
+  }
+  &__categories-list-link {
+    text-decoration: none;
+    font-size: 2rem;
+  }
+}

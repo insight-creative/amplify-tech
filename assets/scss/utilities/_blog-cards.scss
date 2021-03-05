@@ -3,16 +3,48 @@
     border: 1px solid $primaryColor;
     border-bottom: 10px solid $primaryColor;
     margin: 10px;
-    @include breakpoint(md) {
-      max-width: 50%;
-    }
+    position: relative;
+  }
+  &__link {
+    text-decoration: none;
+    color: $gray;
   }
   &__content {
-    padding: 4rem 2rem;
+    padding: 10rem 2rem 4rem 2rem;
     text-align: left;
+  }
+  &__meta {
+    background-color: $primaryColor;
+    color: $white;
+    padding: 1rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  &__day {
+    font-size: 4rem;
+  }
+  &__month {
+    font-size: 1.6rem;
+    line-height: 1.5rem;
   }
   &__image {
     object-fit: cover;
     height: 100%;
+  }
+}
+.home {
+  .latest-posts {
+    &__card {
+      @include breakpoint(md) {
+        max-width: 50%;
+      }
+    }
+    &__meta {
+      display: none;
+    }
   }
 }

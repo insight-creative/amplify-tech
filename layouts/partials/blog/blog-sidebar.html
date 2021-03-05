@@ -1,0 +1,14 @@
+<aside class="blog-sidebar">
+    <div class="blog-sidebar__categories">
+        <h3>Categories</h3>
+        {{- if isset site.Taxonomies "categories" }}
+        {{- if not (eq (len site.Taxonomies.categories) 0) }}
+        <ul class="blog-sidebar__categories-list">
+          {{- range $name, $items := site.Taxonomies.categories }}
+          <li class="blog-sidebar__categories-list-item"><a href="{{ `categories/` | relLangURL }}{{ $name | urlize | lower }}" class="blog-sidebar__categories-list-link">{{ $name | title | humanize }}<span class="ml-2">({{len $items}})</span></a></li>
+          {{- end }}
+        </ul>
+        {{- end }}
+        {{- end }}
+      </div>
+</aside>

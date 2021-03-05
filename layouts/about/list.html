@@ -1,0 +1,30 @@
+{{ define "main" }}
+{{ partial "hero" .  }}
+{{ with site.Data.about.about }}
+    <div class="container text-center padding-top-4 padding-bottom-4">
+        <h1>{{ .heading }}</h1>
+        <p>{{ .copy | markdownify }}</p>
+    </div>
+{{ end }}
+{{ with site.Data.about.team }}
+    <div class="container text-center padding-top-4 padding-bottom-4">
+        <h2>{{ .heading }}</h2>
+        <p>{{ .copy }}</p>
+    </div>
+{{ end }}
+    <div class="staff container text-center flex flex-column flex-row-m flex-wrap padding-top-4 padding-bottom-4">
+        {{ range .Pages }}
+            <a href="{{ .Permalink }}" class="w-100 w-50-m">
+                <div class="staff__card">
+                    {{ if .Params.image }}
+                        <img src="/images/staff/{{ .Params.image }}" alt="{{ .Title }} headshot">
+                    {{ else }}
+                        <img src="/images/staff/Headshot-Placeholder.jpg" alt="headshot placeholder">
+                    {{ end }}
+                    <h3>{{ .Title }}</h3>
+                    <h4 class="g6">{{ .Params.job_title }}</h4>
+                </div>
+            </a>
+        {{ end }}
+    </div>
+{{ end }}

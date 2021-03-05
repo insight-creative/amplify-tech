@@ -6,7 +6,7 @@
     <p class="intro">{{ .copy }}  <span class="tagline">{{ .tagline }}</span></p>
 </div>
 {{ end }}
-{{ partial "home-services" . }}
+{{ partial "services" . }}
 {{ with site.Data.homepage.projects }}
 <div class="container-wide text-center padding-top-4 padding-bottom-4">
     <div class="lane-narrow">
@@ -31,7 +31,13 @@
     {{ with site.Data.homepage.blog }}
         <h3 class="g1">{{ .heading }}</h3>
     {{ end }}
-    {{ partial "blog/blog-cards" . }}
+    <div class="latest-posts flex flex-column flex-row-m">
+        {{ $pages := .Site.RegularPages }}
+        {{ $techTips := where $pages "Type" "tech-tips" }}
+        {{- range first 2 $techTips -}}
+            {{ partial "blog/blog-cards" . }}
+        {{ end }}
+    </div>
     {{ partial "cta" . }}
 </div>
 {{ end }}

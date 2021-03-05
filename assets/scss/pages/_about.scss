@@ -1,0 +1,11 @@
+.staff {
+  a {
+    text-decoration: none;
+  }
+  &__card {
+    margin: 2rem;
+  }
+  &__bio {
+    font-size: 2rem;
+  }
+}

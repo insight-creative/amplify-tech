@@ -1,17 +1,15 @@
-<div class="services container-wide">
-    {{ with site.Data.services.services }}
-        <div class="service-cards">
-        {{ range .service_item }}
-            <div class="service-card text-center">
-                <a href="{{ .slug }}">
-                    <div class="service-card__overlay">
-                        <h3 class="service-card__heading g4">{{ .name }}</h3>
-                        <p class="service-card__description">{{ .description }}</p>
-                    </div>
-                    <img src="/images/{{ .image }}" alt="" class="service-card__image">
-                </a>
+{{ with site.Data.services.services }}
+<div class="service-cards">
+{{ range .service_item }}
+    <div class="service-card text-center">
+        <a href="{{ .slug }}">
+            <div class="service-card__overlay">
+                <h3 class="service-card__heading g2">{{ .name }}</h3>
+                <p class="service-card__description">{{ .description }}</p>
             </div>
-        {{ end }}
-        </div>
-    {{ end }}
+            <img src="/images/{{ .image }}" alt="" class="service-card__image" width="400" height="300">
+        </a>
+    </div>
+{{ end }}
 </div>
+{{ end }}
