@@ -4,18 +4,10 @@
     margin: 0 auto;
   }
 }
-.blog-content {
-  padding: 0 2rem 6rem 2rem;
-  margin-top: -50px;
-  position: relative;
-  figure img {
-    margin: 0 auto;
-  }
-  blockquote {
-    border-left: 5px solid $primaryColor;
-    padding: 2rem;
-    p {
-      margin-bottom: 0;
-    }
+blockquote {
+  border-left: 5px solid $primaryColor;
+  padding: 2rem;
+  p {
+    margin-bottom: 0;
   }
 }

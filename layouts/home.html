@@ -20,7 +20,7 @@
         <div class="featured-projects__logo-container">
             {{ with site.Data.homepage.projects }}
                 {{ range .client }}
-                    <img src="/images/{{ .logo }}" alt="{{ .name }}" class="featured-projects__logo">
+                    <img src="/images/{{ .logo }}" alt="{{ .name }}" class="featured-projects__logo" width="200" height="100">
                 {{ end }}
             {{ end }}
         </div>

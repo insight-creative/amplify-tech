@@ -17,6 +17,6 @@ Rhoncus mattis rhoncus urna neque viverra justo. Mattis pellentesque id nibh tor
 
 > Quisque egestas diam in arcu cursus euismod. Nullam ac tortor vitae purus faucibus. Blandit aliquam etiam erat velit scelerisque in dictum non. Felis eget nunc lobortis mattis aliquam faucibus purus in. Donec pretium vulputate sapien nec sagittis aliquam malesuada bibendum arcu. Morbi enim nunc faucibus a pellentesque sit. Sodales neque sodales ut etiam sit amet nisl. Id faucibus nisl tincidunt eget nullam non nisi. Suscipit tellus mauris a diam. Sem integer vitae justo eget magna fermentum iaculis.
 
-![sound board](/blog/sound.jpg "person using sound board")
+![sound board](/images/blog/sound.jpg "person using sound board")
 
 <!--EndFragment-->
