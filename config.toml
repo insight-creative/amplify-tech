@@ -17,8 +17,9 @@ summaryLength = 30
   # Contact Information
   phone = "920-759-9315"
   email = "allie@randrtech.com"
-  addressLine1 = "899 Progress Way,"
-  addressLine2 = "Kaukauna, WI 54310"
+  address = """
+    899 Progress Way,
+    Kaukauna, WI 54310"""
   hoursMF = "Monday-Friday 9 am - 4 pm"
   hoursSat = "Saturdays 9 am - 1 pm"
   hoursSun = "Closed Sunday"

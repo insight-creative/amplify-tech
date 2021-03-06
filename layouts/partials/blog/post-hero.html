@@ -12,10 +12,12 @@
     <li class="post-meta__item">
       <span class="post-meta__bold">Published</span>{{ .PublishDate.Format "Jan 02, 2006" }}
     </li>
-    <li class="post-meta__item">
-      <span class="post-meta__bold">Category</span>{{ range $index, $elements:= .Params.Categories }}
-      <a href="{{ `categories/` | relLangURL }}{{ . | urlize | lower }}" class="post-meta__link"> {{ if ne $index 0 }}, {{ end }}
-        {{ . | title }}</a> {{ end}}
-    </li>
+    {{ if .Params.Categories }}
+      <li class="post-meta__item">
+        <span class="post-meta__bold">Category</span>{{ range $index, $elements:= .Params.Categories }}
+        <a href="{{ `categories/` | relLangURL }}{{ . | urlize | lower }}" class="post-meta__link"> {{ if ne $index 0 }}, {{ end }}
+          {{ . | title }}</a> {{ end}}
+      </li>
+    {{ end }}
   </ul>
 </div>

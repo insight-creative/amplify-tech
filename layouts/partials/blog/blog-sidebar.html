@@ -4,8 +4,8 @@
         {{- if isset site.Taxonomies "categories" }}
         {{- if not (eq (len site.Taxonomies.categories) 0) }}
         <ul class="blog-sidebar__categories-list">
-          {{- range $name, $items := site.Taxonomies.categories }}
-          <li class="blog-sidebar__categories-list-item"><a href="{{ `categories/` | relLangURL }}{{ $name | urlize | lower }}" class="blog-sidebar__categories-list-link">{{ $name | title | humanize }}<span class="ml-2">({{len $items}})</span></a></li>
+          {{- range .Site.Taxonomies.categories }}
+          <li class="blog-sidebar__categories-list-item"><a href="{{ .Page.Permalink }}" class="blog-sidebar__categories-list-link">{{ .Page.Title }}<span class="ml-2"> ({{ .Count }})</span></a></li>
           {{- end }}
         </ul>
         {{- end }}

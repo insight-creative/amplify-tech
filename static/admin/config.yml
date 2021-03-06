@@ -3,6 +3,8 @@ backend:
   name: git-gateway
   repo: insight-creative/amplify-tech
 
+logo_url: static/images/logo.jpg
+
 media_folder: "static/images/blog" # Folder where user uploaded files should go
 public_folder: "/blog"
 
@@ -14,6 +16,7 @@ collections: # A list of collections the CMS should be able to edit
     fields: # The fields each document in this collection have
       - { label: "Title", name: "title", widget: "string" }
       - { label: "Publish Date", name: "date", widget: "datetime" }
+      - { label: "Draft", name: "draft", widget: "boolean", default: true }
       - {
           label: "Categories",
           name: "categories",
@@ -22,7 +25,7 @@ collections: # A list of collections the CMS should be able to edit
           options: ["Surveillance Systems", "DirecTV Install & Service"],
           required: false,
         }
-      - { label: "Description", name: "description", widget: "string" }
+      - { label: "Description", name: "description", widget: "text" }
       - {
           label: "Featured Image",
           name: "image",
