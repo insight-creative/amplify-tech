@@ -3,7 +3,7 @@ backend:
   name: git-gateway
   repo: insight-creative/amplify-tech
 
-logo_url: static/images/logo.jpg
+logo_url: https://amplifytech-dev.netlify.app/images/logo.jpg
 
 media_folder: "static/images/blog" # Folder where user uploaded files should go
 public_folder: "/blog"

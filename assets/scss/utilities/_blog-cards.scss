@@ -5,9 +5,13 @@
     margin: 10px;
     position: relative;
   }
+  &__card-inner {
+    height: 100%;
+  }
   &__link {
     text-decoration: none;
     color: $gray;
+    height: 100%;
     &:hover,
     &:focus {
       .latest-posts__image {
@@ -73,6 +77,9 @@
       @include breakpoint(md) {
         max-width: 50%;
       }
+    }
+    &__content {
+      padding: 4rem 2rem;
     }
     &__meta {
       display: none;

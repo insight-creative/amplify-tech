@@ -12,7 +12,7 @@ a {
 .secondary-link {
   text-decoration: none;
   position: relative;
-  color: $darkOrange;
+  color: $primaryColor;
   display: inline-block;
 }
 .primary-link:after,
@@ -28,7 +28,7 @@ a {
 }
 .secondary-link:after {
   content: "";
-  background-color: $darkOrange;
+  background-color: $primaryColor;
 }
 .primary-link,
 .secondary-link {
