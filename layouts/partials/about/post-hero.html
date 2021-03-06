@@ -1,15 +1,43 @@
-<div class="post-hero bg-blue" data-scroll-section>
-  <div class="hero__inner short-hero__inner w-100 w-70-l">
-    <h1 class="hero__title short-hero__title text-white no-margin">
-      {{ .Page.Title }}
-    </h1>
+<div class="staff-single container padding-top-4">
+  <div class="staff-single__info">
+    {{ partial "breadcrumbs" . }}
+    <div class="flex flex-column flex-row-m">
+      <div class="w-100 w-50-m">
+        <div class="staff-single__image">
+          {{ if .Params.image }}
+            <img src="/images/staff/{{ .Params.image }}" alt="{{ .Title }} headshot">
+          {{ else }}
+              <img src="/images/staff/Headshot-Placeholder.jpg" alt="headshot placeholder">
+          {{ end }}
+        </div>
+      </div>
+      <div class="staff-single__col w-100 w-50-m">
+        <h2 class="no-margin">{{ .Title }}</h2>
+        <h3 class="g4 fw5">{{ .Params.job_title }}</h3>
+        <ul class="staff-single__contact-list">
+          <li class="staff-single__contact-list-item">
+            <a href="tel:{{.Site.Params.phone}}" class="flex flex-center">
+              <img src="/images/phone-icon.jpg" alt="phone icon" class="staff-single__icon">
+              {{ .Site.Params.phone }}
+            </a>
+          </li>
+          <li class="staff-single__contact-list-item">
+            <a href="https://g.page/randrtech?share" target="_blank" rel="noopener" class="flex flex-center">
+              <img src="/images/location-icon.jpg" alt="locations pin icon" class="staff-single__icon">
+              {{ .Site.Params.addressLine1 }}<br>
+              {{ .Site.Params.addressLine2 }}
+            </a>
+          </li>
+          {{ if .Params.email }}
+            <li class="staff-single__contact-list-item">
+              <a href="mailto:{{ .Params.email }}" class="flex flex-center">
+                <img src="/images/email-icon.jpg" alt="email icon" class="staff-single__icon">
+                {{ .Params.email }}
+              </a>
+            </li>
+          {{ end }}
+        </ul>
+      </div>
+    </div>
   </div>
-</div>
-<div class="container padding-top-2">
-  {{ partial "breadcrumbs" . }}
-  {{ if .Params.image }}
-      <img src="/images/staff/{{ .Params.image }}" alt="{{ .Title }} headshot">
-  {{ else }}
-      <img src="/images/staff/Headshot-Placeholder.jpg" alt="headshot placeholder">
-  {{ end }}
 </div>

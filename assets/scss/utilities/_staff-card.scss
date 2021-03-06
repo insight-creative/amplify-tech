@@ -1,0 +1,82 @@
+.staff {
+  flex-direction: column;
+  @include breakpoint(sm) {
+    flex-direction: row;
+  }
+  a {
+    text-decoration: none;
+    &:hover,
+    &:focus {
+      .staff__image-overlay {
+        opacity: 1;
+      }
+    }
+  }
+  &__card {
+    margin: 2rem;
+  }
+  &__bio {
+    font-size: 2rem;
+  }
+  &__image-wrapper {
+    clip-path: circle(42% at 50% 46%);
+    margin-bottom: -35px;
+    position: relative;
+  }
+  &__image-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: $whiteOverlay;
+    display: grid;
+    place-items: center;
+    opacity: 0;
+    transition: 0.3s ease;
+  }
+  &__small-logo {
+    max-width: 200px;
+    opacity: 0.7;
+    margin-top: -30px;
+  }
+}
+.staff-single {
+  margin-top: $mobileHeader;
+  @include breakpoint(md) {
+    margin-top: $desktopHeader;
+  }
+  .w-50-m + .w-50-m {
+    @include breakpoint(md) {
+      margin-left: 2rem;
+      border-left: 6px solid $primaryColor;
+      padding: 0 2rem;
+    }
+  }
+  &__col {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  &__image {
+    clip-path: circle(42% at 50% 46%);
+    max-width: 275px;
+    margin: 0 auto -35px auto;
+  }
+  &__contact-list {
+    padding: 0;
+  }
+  &__contact-list-item {
+    display: flex;
+    padding: 1rem 0;
+    a {
+      text-decoration: none;
+      font-size: 2rem;
+      line-height: 2.5rem;
+    }
+  }
+  &__icon {
+    max-width: 50px;
+    margin-right: 1rem;
+  }
+}

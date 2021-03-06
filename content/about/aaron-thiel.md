@@ -6,7 +6,8 @@ copy: "Aaron opened Amplify in 2003 and now, with decades of experience, oversee
 
 Aaron got his start with audio engineering internships at a large record label and construction engineering company. He holds an associate degree in marketing from Fox Valley Technical College and a master’s degree in audio engineering from Indiana Tech. He has certifications in AMX Control Systems and BSS Audio Processing. In his free time, Aaron amplifies his life by volunteering at his church and enjoying his family.
 "
-image:
+image: Aaron_Thiel.jpg
+email: aaron@randrtech.com
 weight: 1
 ---
 

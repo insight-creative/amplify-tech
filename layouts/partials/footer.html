@@ -6,7 +6,7 @@
         <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d11421.443322110008!2d-88.2643127!3d44.3025321!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xf3bdbef01e1e40af!2sR%26R%20Technologies%2C%20Inc.!5e0!3m2!1sen!2sus!4v1614620618122!5m2!1sen!2sus" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" title="Amplify Technologies Google Map"></iframe>
       </div>
       <div class="w-50">
-        <h6>Contact</h6>
+        <span class="g6">Contact</span>
         <a href="https://g.page/randrtech?share" target="_blank" rel="noopener"><p>{{ .Site.Params.addressLine1 }}<br>{{ .Site.Params.addressLine2 }}</p></a>
         <a href="tel:{{ .Site.Params.phone }}"><p>{{ .Site.Params.phone }}</p></a>
         <a href="mailto:{{ .Site.Params.email }}"><p>{{ .Site.Params.email }}</p></a>
@@ -14,13 +14,13 @@
     </div>
     <div class="footer__hours w-100 w-30-m">
       <div class="footer__hours-inner">
-        <h6>Hours</h6>
+        <span class="g6">Hours</span>
         <p>{{ .Site.Params.hoursMF }}<br>{{ .Site.Params.hoursSat }}<br>{{ .Site.Params.hoursSun }}</p>
       </div>
     </div>
     <div class="footer__sitemap w-100 w-30-m flex">
       <div class="w-50">
-        <h6>Site Map</h6>
+        <span class="g6">Site Map</span>
         {{ with .Site.Menus.main }}
         <ul class="footer__nav-list">
           {{ range . }}
@@ -33,7 +33,7 @@
       {{ end }}
       </div>
       <div class="w-50">
-        <h6>Connect</h6>
+        <span class="g6">Connect</span>
         <div class="footer__social">
           {{ partial "svg-icons/facebook.svg" . }}
           {{ partial "svg-icons/twitter.svg" . }}

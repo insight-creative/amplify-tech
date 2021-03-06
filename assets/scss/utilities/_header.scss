@@ -212,11 +212,7 @@
     font-weight: 500;
     line-height: 1;
   }
-  img {
-    max-width: 28px;
-    height: 100%;
-    @include breakpoint(lg) {
-      max-width: 40px;
-    }
+  svg {
+    width: 45px;
   }
 }

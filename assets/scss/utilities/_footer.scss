@@ -20,9 +20,10 @@
   &__content {
     justify-content: space-between;
   }
-  h6 {
+  span {
     color: $tan;
     text-transform: uppercase;
+    font-weight: 700;
   }
   a {
     color: $white;

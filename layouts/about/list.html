@@ -12,14 +12,19 @@
         <p>{{ .copy }}</p>
     </div>
 {{ end }}
-    <div class="staff container text-center flex flex-column flex-row-m flex-wrap padding-top-4 padding-bottom-4">
+    <div class="staff container text-center flex flex-wrap padding-top-4 padding-bottom-4">
         {{ range .Pages }}
-            <a href="{{ .Permalink }}" class="w-100 w-50-m">
+            <a href="{{ .Permalink }}" class="w-100 w-50-s">
                 <div class="staff__card">
                     {{ if .Params.image }}
-                        <img src="/images/staff/{{ .Params.image }}" alt="{{ .Title }} headshot">
+                        <div class="staff__image-wrapper">
+                            <div class="staff__image-overlay">
+                                <img src="/images/Amplify_Technologies_Logo_small.png" alt="{{ site.Title }}" class="staff__small-logo">
+                            </div>
+                            <img src="/images/staff/{{ .Params.image }}" alt="{{ .Title }} headshot" class="staff__image">
+                        </div>
                     {{ else }}
-                        <img src="/images/staff/Headshot-Placeholder.jpg" alt="headshot placeholder">
+                        <img src="/images/staff/Headshot-Placeholder.jpg" alt="headshot placeholder" class="staff__image">
                     {{ end }}
                     <h3>{{ .Title }}</h3>
                     <h4 class="g6">{{ .Params.job_title }}</h4>

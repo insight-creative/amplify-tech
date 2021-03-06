@@ -8,10 +8,24 @@
   &__link {
     text-decoration: none;
     color: $gray;
+    &:hover,
+    &:focus {
+      .latest-posts__image {
+        transform: scale(1.1);
+      }
+      .latest-posts__read-more {
+        transform: translateY(-10px);
+        opacity: 1;
+      }
+    }
   }
   &__content {
     padding: 10rem 2rem 4rem 2rem;
     text-align: left;
+  }
+  &__summary {
+    font-size: 2rem;
+    line-height: 3rem;
   }
   &__meta {
     background-color: $primaryColor;
@@ -31,9 +45,26 @@
     font-size: 1.6rem;
     line-height: 1.5rem;
   }
+  &__image-wrapper {
+    overflow: hidden;
+  }
   &__image {
     object-fit: cover;
     height: 100%;
+    transition: 0.3s ease-out;
+  }
+  &__read-more {
+    position: absolute;
+    bottom: 0;
+    transform: translateY(0);
+    opacity: 0;
+    transition: 0.3s ease-out;
+    font-size: 1.6rem;
+    display: flex;
+    svg {
+      width: 15px;
+      fill: $secondaryColor;
+    }
   }
 }
 .home {

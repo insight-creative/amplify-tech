@@ -32,9 +32,7 @@
         <h3 class="g1">{{ .heading }}</h3>
     {{ end }}
     <div class="latest-posts flex flex-column flex-row-m">
-        {{ $pages := .Site.RegularPages }}
-        {{ $techTips := where $pages "Type" "tech-tips" }}
-        {{- range first 2 $techTips -}}
+        {{ range first 2 (where site.RegularPages "Type" "tech-tips") }}
             {{ partial "blog/blog-cards" . }}
         {{ end }}
     </div>
