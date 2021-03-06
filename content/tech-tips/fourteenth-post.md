@@ -1,10 +1,11 @@
 ---
 title: Fourteenth Post
 date: 2021-03-06T04:54:21.285Z
-draft: true
+draft: false
 categories:
   - DirecTV Install & Service
-description: This is another test post set in a draft state
+description: This is another test post set in a draft state and then changed to
+  false after initial publish
 image: /blog/sound.jpg
 ---
 <!--StartFragment-->
