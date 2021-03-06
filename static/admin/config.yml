@@ -4,7 +4,7 @@ backend:
   repo: insight-creative/amplify-tech
 
 media_folder: "static/images/blog" # Folder where user uploaded files should go
-public_folder: "images"
+public_folder: "/blog"
 
 collections: # A list of collections the CMS should be able to edit
   - name: "tech-tips" # Used in routes, ie.: /admin/collections/:slug/edit
@@ -20,7 +20,9 @@ collections: # A list of collections the CMS should be able to edit
           widget: "select",
           multiple: true,
           options: ["Surveillance Systems", "DirecTV Install & Service"],
+          required: false,
         }
+      - { label: "Description", name: "description", widget: "string" }
       - {
           label: "Featured Image",
           name: "image",
