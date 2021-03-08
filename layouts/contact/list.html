@@ -5,28 +5,28 @@
             <h1>Contact Us</h1>
             <div class="contact-info">
               <ul class="contact-info__contact-list flex flex-column flex-row-m">
+                <a href="tel:{{.Site.Params.phone}}" class="contact-info__contact-link flex flex-center">
                   <li class="contact-info__contact-list-item">
-                    <a href="tel:{{.Site.Params.phone}}" class="flex flex-center">
-                      <img src="/images/phone-icon.png" alt="phone icon" class="contact-info__icon">
-                      <h2 class="g3">Phone</h2>
-                      {{ .Site.Params.phone }}
-                    </a>
+                    <img src="/images/phone-icon.png" alt="phone icon" class="contact-info__icon">
+                    <h2 class="g3">Phone</h2>
+                    {{ .Site.Params.phone }}
                   </li>
+                </a>
+                <a href="https://g.page/randrtech?share" target="_blank" rel="noopener" class="contact-info__contact-link flex flex-center">
                   <li class="contact-info__contact-list-item">
-                    <a href="https://g.page/randrtech?share" target="_blank" rel="noopener" class="flex flex-center">
-                      <img src="/images/location-icon.png" alt="locations pin icon" class="contact-info__icon">
-                      <h2 class="g3">Address</h2>
-                      {{ .Site.Params.address }}
-                    </a>
+                    <img src="/images/location-icon.png" alt="locations pin icon" class="contact-info__icon">
+                    <h2 class="g3">Address</h2>
+                    {{ .Site.Params.address }}
                   </li>
+                </a>
+                <a href="mailto:{{ .Site.Params.email }}" class="contact-info__contact-link flex flex-center">
                   <li class="contact-info__contact-list-item">
-                      <a href="mailto:{{ .Site.Params.email }}" class="flex flex-center">
-                        <img src="/images/email-icon.png" alt="email icon" class="contact-info__icon">
-                        <h2 class="g3">Email</h2>
-                        {{ .Site.Params.email }}
-                      </a>
-                    </li>
-                </ul>
+                    <img src="/images/email-icon.png" alt="email icon" class="contact-info__icon">
+                    <h2 class="g3">Email</h2>
+                    {{ .Site.Params.email }}
+                  </li>
+                </a>
+              </ul>
             </div>
         </div>
     </div>

@@ -2,24 +2,33 @@
   &__card {
     border: 1px solid $primaryColor;
     border-bottom: 10px solid $primaryColor;
-    margin: 10px;
+    margin: 10px 0;
     position: relative;
+    @include breakpoint(md) {
+      margin: 10px;
+    }
   }
   &__card-inner {
     height: 100%;
+    flex-direction: column;
+    @include breakpoint(sm) {
+      flex-direction: row;
+    }
   }
   &__link {
     text-decoration: none;
     color: $gray;
     height: 100%;
-    &:hover,
-    &:focus {
-      .latest-posts__image {
-        transform: scale(1.1);
-      }
-      .latest-posts__read-more {
-        transform: translateY(-10px);
-        opacity: 1;
+    @include breakpoint(md) {
+      &:hover,
+      &:focus {
+        .latest-posts__image {
+          transform: scale(1.1);
+        }
+        .latest-posts__read-more {
+          transform: translateY(-10px);
+          opacity: 1;
+        }
       }
     }
   }

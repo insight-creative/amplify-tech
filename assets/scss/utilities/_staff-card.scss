@@ -5,10 +5,12 @@
   }
   a {
     text-decoration: none;
-    &:hover,
-    &:focus {
-      .staff__image-overlay {
-        opacity: 1;
+    @include breakpoint(md) {
+      &:hover,
+      &:focus {
+        .staff__image-overlay {
+          opacity: 1;
+        }
       }
     }
   }

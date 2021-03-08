@@ -14,15 +14,21 @@
 }
 .post-meta {
   display: flex;
+  flex-direction: column;
   font-size: 1.8rem;
   padding: 2rem 0;
   border-bottom: 1px solid $lightBlue;
+  @include breakpoint(md) {
+    flex-direction: row;
+  }
   &__item {
     list-style-type: none;
     display: flex;
   }
-  .post-meta__item + .post-meta__item {
-    margin-left: 1rem;
+  @include breakpoint(md) {
+    .post-meta__item + .post-meta__item {
+      margin-left: 1rem;
+    }
   }
   &__bold {
     font-weight: 700;

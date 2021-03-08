@@ -1,7 +1,7 @@
 <article class="latest-posts__card fade-up">
     <a href="{{ .Permalink }}" class="latest-posts__link">
         <div class="latest-posts__card-inner flex">
-            <div class="latest-posts__content w-60">
+            <div class="latest-posts__content w-100 w-60-sm">
                 <h3 class="latest-posts__title">{{ .Title }}</h3>
                 <p class="latest-posts__summary">{{ .Description | truncate 120 }}</p>
                 <span class="latest-posts__read-more">Read More {{ partial "svg-icons/arrow-right.svg" . }}</span>
@@ -10,7 +10,7 @@
                     <span class="latest-posts__month">{{ .PublishDate.Format "Jan, 2006" }}</span>
                 </div>
             </div>
-            <div class="latest-posts__image-wrapper w-40">
+            <div class="latest-posts__image-wrapper w-100 w-40-sm">
                 <img src="/images/{{ .Params.image }}" alt="{{ .Title }}" class="latest-posts__image" width="100" height="300">
             </div>
         </div>

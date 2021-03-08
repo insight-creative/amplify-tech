@@ -47,10 +47,12 @@
     object-fit: cover;
     z-index: 1;
   }
-  &:hover,
-  &:focus {
-    .service-card__overlay {
-      opacity: 1;
+  @include breakpoint(md) {
+    &:hover,
+    &:focus {
+      .service-card__overlay {
+        opacity: 1;
+      }
     }
   }
 }
