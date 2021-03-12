@@ -1,3 +1,5 @@
 {{ with site.Data.homepage.call_to_action }}
-<h3>{{ .heading }} <span class="cta-link"><a href="/contact/">{{ .action }}</a></span></h3>
+<div class="container text-center padding-bottom-4">
+    <h3>{{ .heading }} <span class="cta-link"><a href="/contact/">{{ .action }}</a></span></h3>
+</div>
 {{ end }}

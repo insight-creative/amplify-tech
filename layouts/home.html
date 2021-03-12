@@ -27,7 +27,7 @@
     </div>
 </div>
 {{ end }}
-<div class="container text-center padding-top-4 padding-bottom-4">
+<div class="container text-center padding-top-4">
     {{ with site.Data.homepage.blog }}
         <h3 class="g1">{{ .heading }}</h3>
     {{ end }}
@@ -36,6 +36,6 @@
             {{ partial "blog/blog-cards" . }}
         {{ end }}
     </div>
-    {{ partial "cta" . }}
 </div>
+{{ partial "cta" . }}
 {{ end }}

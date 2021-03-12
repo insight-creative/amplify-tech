@@ -7,10 +7,10 @@ services:
       image: fox-valley-commercial-speakers-pagers-and-emergency-installation.jpg
       slug: /services/commercial-speakers-pagers-emergency/
 
-    - name: Audio & Lighting Controls
+    - name: Audiovisual and Lighting Control
       description: Enjoy energy efficiency, cost savings and more at the touch of a button.
       image: fox-valley-audio-and-lighting-controls-installation.jpg
-      slug: /services/audio-lighting-controls/
+      slug: /services/audiovisual-lighting-controls/
 
     - name: Commercial Grade Cameras
       description: From property to a production line, keep watch with clarity.

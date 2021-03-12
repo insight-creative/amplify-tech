@@ -1,9 +1,24 @@
 {{ define "main" }}
     {{ partial "hero" .  }}
     <div class="service container text-center padding-top-4 padding-bottom-4">
-        <h2>{{ .Title }}</h2>
-        <p class="service__description">{{ .Description }}</p>
+        {{ with .Params.intro }}
+        <div class="text-center">
+            <h2>{{ .heading }}</h2>
+            <h3 class="g4">{{ .subhead }}</h3>
+        </div>
+        <p>{{ .copy | markdownify }}</p>
+        {{ end }}
     </div>
-    {{ partial "full-service" . }}
+    <div class="container padding-bottom-4">
+        {{ with .Params.offerings }}
+        <h3>{{ .heading }}</h3>
+        <ul>
+            {{ range .offering_list }}
+            <li>{{ .item | markdownify }}</li>
+            {{ end }}
+        </ul>
+        {{ end }}
+    </div>
     {{ partial "services" . }}
+    {{ partial "cta" . }}
 {{ end }}
