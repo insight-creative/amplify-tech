@@ -18,7 +18,7 @@ summaryLength = 30
   phone = "920-759-9315"
   email = "allie@randrtech.com"
   address = """
-    899 Progress Way,
+    PO Box 1007,
     Kaukauna, WI 54310"""
   hoursMF = "Monday-Friday 9 am - 4 pm"
   hoursSat = "Saturdays 9 am - 1 pm"
@@ -64,20 +64,52 @@ summaryLength = 30
     url  = "/services/"
     weight = 2
 
-[[menu.main]]
-    name = "Projects"
-    url  = "/projects/"
+  [[menu.main]]
+    parent = "Services"
+    name = "Commercial Grade Speakers, Paging & Emergency"
+    weight = 1
+    url = "/services/commercial-speakers-pagers-emergency/"
+
+  [[menu.main]]
+    parent = "Services"
+    name = "Audiovisual and Lighting Control"
+    weight = 2
+    url = "/services/audiovisual-lighting-controls/"
+
+  [[menu.main]]
+    parent = "Services"
+    name = "Commercial Grade Cameras"
     weight = 3
+    url = "/services/commercial-grade-cameras/"
+
+  [[menu.main]]
+    parent = "Services"
+    name = "Audiovisual and Lighting Control"
+    weight = 4
+    url = "/services/audiovisual-lighting-controls/"
+
+  [[menu.main]]
+    parent = "Services"
+    name = "Access Control Systems"
+    weight = 5
+    url = "/services/access-control-systems/"
+
+  [[menu.main]]
+    parent = "Services"
+    name = "Surveillance Systems"
+    weight = 6
+    url = "/services/surveillance-systems/"
+
+  [[menu.main]]
+    parent = "Services"
+    name = "DirecTV Installation & Service"
+    weight = 7
+    url = "/services/directv-install-service/"
 
 [[menu.main]]
     name = "About"
     url  = "/about/"
     weight = 4
-
-[[menu.main]]
-    name = "Tech Tips"
-    url  = "/tech-tips/"
-    weight = 5
 
 [[menu.main]]
     name = "Contact"

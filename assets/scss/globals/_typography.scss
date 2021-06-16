@@ -34,7 +34,9 @@ h6 {
   margin-bottom: 0.5rem;
 }
 p {
-  margin: 0 auto 20px auto;
+  @include breakpoint(md) {
+    margin: 0 auto 20px auto;
+  }
 }
 /* Font-scale of a major third */
 h1,

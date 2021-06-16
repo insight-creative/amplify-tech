@@ -1,14 +1,14 @@
 {{ define "main" }}
 {{ partial "hero" .  }}
 {{ with site.Data.about.about }}
-    <div class="container text-center padding-top-4 padding-bottom-4">
-        <h1>{{ .heading }}</h1>
+    <div class="container padding-top-4 padding-bottom-4">
+        <h1 class="text-center-m">{{ .heading }}</h1>
         <p>{{ .copy | markdownify }}</p>
     </div>
 {{ end }}
 {{ with site.Data.about.team }}
-    <div class="container text-center padding-top-4 padding-bottom-4">
-        <h2>{{ .heading }}</h2>
+    <div class="container padding-top-4 padding-bottom-4">
+        <h2 class="text-center-m">{{ .heading }}</h2>
         <p>{{ .copy }}</p>
     </div>
 {{ end }}

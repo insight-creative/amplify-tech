@@ -4,26 +4,29 @@
 @import "globals/body";
 @import "globals/layout";
 @import "globals/links";
-@import "globals/buttons";
 @import "globals/flexbox";
 @import "globals/hover";
 @import "globals/images";
 @import "globals/typography";
 @import "globals/background";
-@import "utilities/hamburger";
-@import "utilities/header";
-@import "utilities/cta";
-@import "utilities/footer";
-@import "utilities/service-cards";
-@import "utilities/projects";
-@import "utilities/blog-cards";
-@import "utilities/full-service";
-@import "utilities/blog-sidebar";
-@import "utilities/pagination";
-@import "utilities/breadcrumbs";
-@import "utilities/post-hero";
-@import "utilities/post-navigation";
-@import "utilities/staff-card";
+
+@import "components/buttons";
+@import "components/hamburger";
+@import "components/service-cards";
+@import "components/projects";
+@import "components/blog-cards";
+@import "components/full-service";
+@import "components/blog-sidebar";
+@import "components/pagination";
+@import "components/breadcrumbs";
+@import "components/post-navigation";
+@import "components/staff-card";
+
+@import "layout/header";
+@import "layout/footer";
+@import "layout/cta";
+@import "layout/post-hero";
+
 @import "pages/default";
 @import "pages/home";
 @import "pages/services";

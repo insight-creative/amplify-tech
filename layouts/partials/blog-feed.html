@@ -3,7 +3,7 @@
       {{ $pages := .Site.RegularPages }}
       {{ $blog := where $pages "Type" "blog" }}
       {{- range first 3 $blog -}}
-      <article class="fade-up blog-summary">
+      <article class="fade-up blog-summary" role="article">
           <a href="{{ .Permalink }}" class="blog-summary__link">
               <div class="flex flex-column flex-row-m">
                   <div class="w-100 w-30-m">

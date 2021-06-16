@@ -67,10 +67,13 @@
   }
   &__social {
     display: grid;
+    gap: 1rem;
     grid-template-columns: repeat(2, 1fr);
+    align-items: center;
   }
   svg {
     width: 40px;
     fill: $white;
+    margin: 0 auto;
   }
 }

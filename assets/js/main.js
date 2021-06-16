@@ -10,6 +10,34 @@ gsap.registerPlugin(ScrollTrigger);
 const menu = document.querySelector(".nav-list");
 const hamburger = document.querySelector(".hamburger");
 const navClasses = document.querySelector('.site-header');
+const menuItems = document.querySelectorAll('.nav-list__has-dropdown');
+
+Array.prototype.forEach.call(menuItems, function(el, i){
+
+        el.addEventListener("mouseover", function(event){
+             this.classList.add('dropdown-open');
+       });
+       el.addEventListener("mouseout", function(event){
+             setTimeout(function(event){
+                el.classList.remove('dropdown-open');
+             }, 500);
+       });
+});
+
+Array.prototype.forEach.call(menuItems, function(el, i){
+       el.querySelector('a').addEventListener("click", function(event){
+             if (this.parentNode.className == "nav-list__item nav-list__has-dropdown") {
+                   this.parentNode.classList.add('dropdown-open');
+                   this.setAttribute('aria-expanded', "true");
+             } else {
+                   this.parentNode.classList.remove('dropdown-open');
+                   this.setAttribute('aria-expanded', "false");
+             }
+             event.preventDefault();
+             return false;
+       });
+});
+
 let scrollState = 0;
 
 var scrollTop = function() {
@@ -94,10 +122,6 @@ function fadeInContent() {
             }
         });
     }
-}
-
-function initZoom() {
-  
 }
 
 function homepageAnimations() {

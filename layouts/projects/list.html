@@ -1,12 +1,12 @@
 {{ define "main" }}
 {{ partial "hero" . }}
 {{ with site.Data.projects.projects }}
-  <div class="container text-center padding-top-4 padding-bottom-4">
+  <div class="container text-center-m padding-top-4 padding-bottom-4">
     <h1>{{ .heading }}</h1>
     <p>{{ .copy }}</p>
   </div>
 {{ end }}
-<section class="container blog-container" data-scroll-section>
+<section class="container blog-container">
   {{ range .Paginator.Pages.ByDate.Reverse }}
   <article class="fade-up blog-summary">
     <a href="{{ .Permalink }}" class="blog-summary__link">
