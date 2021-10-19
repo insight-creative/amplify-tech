@@ -3,6 +3,8 @@ title: Access Control Systems
 seo:
   title: Access Control Systems
   description: Amplified Technologies custom access control systems with surveillance integration feature keypad or badge reader entry, grounds security & property protection.
+  featured_image: access-control-services.jpg
+  featured_image_alt: access control card being used to enter locked door
 
 intro:
   heading: Access Control Systems
