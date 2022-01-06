@@ -41,11 +41,11 @@
       </span>
     </button>
     <a class="call-now" href="tel:920-759-9315">
+      {{ partial "svg-icons/phone.svg" . }}
       <span class="call-now__text">
         <strong>Call Now</strong>
         <span class="call-now__number">{{ site.Params.phone }}</span>
       </span>
-      {{ partial "svg-icons/phone-w-waves.svg" . }}
     </a>
   </nav>
 </header>

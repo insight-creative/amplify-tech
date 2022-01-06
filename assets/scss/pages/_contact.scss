@@ -1,13 +1,17 @@
-.contact {
+.contact,
+.apply-now {
   margin-top: $mobileHeader;
+
   @include breakpoint(lg) {
     margin-top: $desktopHeader;
   }
 }
+
 .contact-info {
   &__contact-list {
     padding: 0;
   }
+
   &__contact-link {
     display: flex;
     flex: 1;
@@ -17,6 +21,7 @@
     background: $white;
     margin: 2rem;
   }
+
   &__contact-list-item {
     display: flex;
     flex-direction: column;
@@ -24,11 +29,13 @@
     padding: 4rem 2rem;
     list-style-type: none;
   }
+
   &__icon {
     max-width: 50px;
     margin-bottom: 1rem;
   }
 }
+
 .contact-form {
   &__netlify-bot-field {
     opacity: 0;
@@ -36,6 +43,32 @@
     width: 0;
     margin: 0;
   }
+
+  &__row-wrapper {
+    display: flex;
+    flex-direction: column;
+
+    @include breakpoint(md) {
+      flex-direction: row;
+
+      .contact-form__form-group {
+        flex: 50%;
+      }
+
+      .contact-form__form-group:nth-of-type(2) {
+        padding-left: 1rem;
+      }
+    }
+  }
+
+  &__radio-wrapper {
+    margin-bottom: 2rem;
+
+    .contact-form__radio:nth-of-type(2) {
+      padding-left: 1rem;
+    }
+  }
+
   .contact-form__form-group input,
   .contact-form__form-group textarea {
     background-color: #f6f6f6;
@@ -44,16 +77,20 @@
     padding: 1rem 2rem;
     margin-bottom: 2rem;
   }
+
   &__form-group input {
     height: 6rem;
   }
+
   &__form-group textarea {
     height: 20rem;
   }
+
   &__btn {
     border: none;
   }
 }
+
 .thank-you {
   .blog-content {
     margin-top: 6rem;

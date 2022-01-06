@@ -66,13 +66,13 @@ summaryLength = 30
 
   [[menu.main]]
     parent = "Services"
-    name = "Commercial Grade Speakers, Paging & Emergency"
+    name = "Commercial Grade Speakers, Public Address & Emergency Systems"
     weight = 1
-    url = "/services/commercial-speakers-pagers-emergency/"
+    url = "/services/commercial-grade-speakers-and-emergency-systems/"
 
   [[menu.main]]
     parent = "Services"
-    name = "Audiovisual and Lighting Control"
+    name = "Audiovisual & Lighting Control"
     weight = 2
     url = "/services/audiovisual-lighting-controls/"
 
@@ -84,26 +84,20 @@ summaryLength = 30
 
   [[menu.main]]
     parent = "Services"
-    name = "Audiovisual and Lighting Control"
-    weight = 4
-    url = "/services/audiovisual-lighting-controls/"
-
-  [[menu.main]]
-    parent = "Services"
     name = "Access Control Systems"
-    weight = 5
+    weight = 4
     url = "/services/access-control-systems/"
 
   [[menu.main]]
     parent = "Services"
     name = "Surveillance Systems"
-    weight = 6
+    weight = 5
     url = "/services/surveillance-systems/"
 
   [[menu.main]]
     parent = "Services"
-    name = "DirecTV Installation & Service"
-    weight = 7
+    name = "Hospitality DirecTV Installation & Service"
+    weight = 6
     url = "/services/directv-install-service/"
 
 [[menu.main]]

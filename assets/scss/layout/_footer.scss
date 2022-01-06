@@ -6,73 +6,89 @@
   background-position: center;
   background-repeat: no-repeat;
 }
+
 .footer {
   background-color: $primaryColor;
   color: $white;
   padding: 2em;
   font-size: 1.6rem;
   line-height: 2.5rem;
+
   @include breakpoint(sm) {
     .w-50 + .w-50 {
       margin-left: 2rem;
     }
   }
+
   &__content {
     justify-content: space-between;
   }
+
   span {
     color: $tan;
     text-transform: uppercase;
     font-weight: 700;
   }
+
   a {
     color: $white;
     text-decoration: none;
     display: block;
+
     &:hover {
       color: $tan;
     }
   }
+
   p {
     margin-bottom: 0;
   }
+
+  &__column {
+    margin: 1.25rem 0;
+  }
+
   &__map {
     display: none;
+
     @include breakpoint(sm) {
       display: block;
     }
   }
+
   &__hours-inner {
-    margin: 2rem 0;
     @include breakpoint(md) {
-      margin: 0;
       width: fit-content;
-      margin: 0 auto;
     }
   }
+
   &__nav {
     display: flex;
     justify-content: center;
+
     ul {
       margin-bottom: 0;
     }
   }
+
   &__nav-list {
     display: flex;
     flex-direction: column;
     padding: 0;
   }
+
   &__nav-list-item {
     list-style-type: none;
   }
+
   &__social {
     display: grid;
-    gap: 1rem;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     align-items: center;
   }
+
   svg {
-    width: 40px;
+    width: 30px;
     fill: $white;
     margin: 0 auto;
   }

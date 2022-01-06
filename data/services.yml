@@ -2,12 +2,12 @@ services:
   heading: Full service. No hassle.
   copy: Imagine if you could hire someone to take care of everything. Well, we won’t pour your coffee or do your taxes, but you can rely on us to handle every technical need from consultation and installation to ongoing service, troubleshooting and more.
   service_item:
-    - name: Commercial Speakers, Pagers & Emergency
+    - name: Commercial Grade Speakers, Public Address & Emergency Systems
       description: Rely on clear audio every day and in crises.
       image: fox-valley-commercial-speakers-pagers-and-emergency-installation.jpg
-      slug: /services/commercial-speakers-pagers-emergency/
+      slug: /services/commercial-grade-speakers-and-emergency-systems/
 
-    - name: Audiovisual and Lighting Control
+    - name: Audiovisual & Lighting Control
       description: Enjoy energy efficiency, cost savings and more at the touch of a button.
       image: fox-valley-audio-and-lighting-controls-installation.jpg
       slug: /services/audiovisual-lighting-controls/
@@ -27,7 +27,7 @@ services:
       image: fox-valley-surveillance-systems-installation.jpg
       slug: /services/surveillance-systems/
 
-    - name: DirecTV Install & Service
+    - name: Hospitality DirecTV Installation & Service
       description: Ease your mind and leave large-scale setups to the experts.
       image: fox-valley-directv-installation.jpg
       slug: /services/directv-install-service/

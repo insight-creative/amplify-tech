@@ -45,10 +45,13 @@
     margin-top: $desktopHeader;
   }
 }
+
 .hero,
 .short-hero {
   &__overlay {
     position: relative;
+    height: 100%;
+
     &:after {
       height: 100%;
       width: 100%;
@@ -66,23 +69,36 @@
         rgba(0, 0, 0, 0.9) 100%
       );
     }
+
+    img {
+      object-fit: cover;
+      object-position: center;
+      height: 100%;
+    }
   }
+
   &__inner {
     text-align: center;
   }
 }
+
 .short-hero {
   position: relative;
   margin-top: $mobileHeader;
+  height: 80vh;
+  overflow: hidden;
+
   @include breakpoint(lg) {
     margin-top: $desktopHeader;
   }
 }
+
 .hero__title,
 .hero__subtitle {
   color: $white;
   text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.7);
 }
+
 .hero-inner {
   display: flex;
   align-items: center;

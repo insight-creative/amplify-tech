@@ -14,12 +14,10 @@ intro:
 offerings:
   heading: "Amplified Access Control System offerings:"
   offering_list:
-    - item: Free assessments
-    - item: Programmed/remote control access to property
-    - item: Keypad entry
-    - item: Badge reader entry
+    - item: Remotely controlled property access
+    - item: Remote vehicle & personnel identification
     - item: Grounds security
     - item: '<a href="/services/surveillance-systems/">Surveillance system integration</a>'
-    - item: Remote vehicle/personnel identification
-    - item: Ongoing service, maintenance and updates
+    - item: Responsive tech support & maintenance
+    - item: Keypad or fob entry
 ---

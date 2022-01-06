@@ -1,25 +1,22 @@
 <div class="pre-footer"></div>
 <footer id="footer" class="footer" role="contentinfo">
   <div class="footer__content container-wide flex flex-column flex-row-m">
-    <div class="footer__contact w-100 w-40-m flex">
-      <div class="footer__map w-50">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d11421.443322110008!2d-88.2643127!3d44.3025321!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xf3bdbef01e1e40af!2sR%26R%20Technologies%2C%20Inc.!5e0!3m2!1sen!2sus!4v1614620618122!5m2!1sen!2sus" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" title="Amplify Technologies Google Map"></iframe>
-      </div>
-      <div class="w-50">
+    <div class="footer__contact footer__column w-100 w-25-m flex">
+      <div>
         <span class="g6">Contact</span>
-        <a href="https://g.page/randrtech?share" target="_blank" rel="noopener"><p>{{ .Site.Params.address }}</p></a>
+        <p>{{ .Site.Params.address }}</p>
         <a href="tel:{{ .Site.Params.phone }}"><p>{{ .Site.Params.phone }}</p></a>
         <a href="mailto:{{ .Site.Params.email }}"><p>{{ .Site.Params.email }}</p></a>
       </div>
     </div>
-    <div class="footer__hours w-100 w-30-m">
+    <div class="footer__hours footer__column w-100 w-25-m">
       <div class="footer__hours-inner">
         <span class="g6">Hours</span>
         <p>{{ .Site.Params.hoursMF }}<br>{{ .Site.Params.hoursSat }}<br>{{ .Site.Params.hoursSun }}</p>
       </div>
     </div>
-    <div class="footer__sitemap w-100 w-30-m flex">
-      <div class="w-50">
+    <div class="footer__sitemap footer__column w-100 w-25-m flex">
+      <div>
         <span class="g6">Site Map</span>
         {{ with .Site.Menus.main }}
         <ul class="footer__nav-list">
@@ -32,14 +29,14 @@
         </ul>
       {{ end }}
       </div>
-      <div class="w-50">
-        <span class="g6">Connect</span>
-        <div class="footer__social">
-          {{ partial "svg-icons/facebook.svg" . }}
-          {{ partial "svg-icons/twitter.svg" . }}
-          {{ partial "svg-icons/flickr.svg" . }}
-          {{ partial "svg-icons/youtube.svg" . }}
-        </div>
+    </div>
+    <div class="footer__connect footer__column w-100 w-25-m">
+      <span class="g6">Connect</span>
+      <div class="footer__social">
+        {{ partial "svg-icons/facebook.svg" . }}
+        {{ partial "svg-icons/twitter.svg" . }}
+        {{ partial "svg-icons/flickr.svg" . }}
+        {{ partial "svg-icons/youtube.svg" . }}
       </div>
     </div>
   </div>
