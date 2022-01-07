@@ -7,7 +7,7 @@ seo:
 intro:
   heading: Commercial Grade Cameras
   subhead: From property to production line, keep watch with clarity.
-  copy: We offer the highest resolution cameras on the market! There are many useful applications including grounds security, theft protection, employee supervision or manufacturing production management. Our experienced and certified technicians use the most advanced technology to create create surveillance systems that are dependable and durable in even the most challenging environments.
+  copy: We offer the highest resolution cameras on the market! There are many useful applications including grounds security, theft protection, employee supervision or manufacturing production management. Our experienced and certified technicians use the most advanced technology to create surveillance systems that are dependable and durable in even the most challenging environments.
 
 offerings:
   heading: "Amplified Commercial Grade Camera offerings:"

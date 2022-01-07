@@ -16,6 +16,6 @@ offerings:
     - item: Next Gen HD premium experience
     - item: Custom channels with hotel & event info
     - item: COM3000 distributed or DRE system
-    - item: ENERGY STAR® rated
+    - item: ENERGY STAR<sup>®</sup> rated
     - item: Responsive, reliable & local service
 ---

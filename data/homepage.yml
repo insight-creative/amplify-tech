@@ -5,7 +5,7 @@ intro:
 
 projects:
   heading: The biggest names in the Valley trust Amplify Technologies.
-  copy: The biggest names in the Valley trust Amplify. Read more about how we’ve helped other clients and learn what’s possible with quality sight, sound and security.
+  copy: Simply ask around to learn how we've helped clients discover what's possible with quality sight, sound and security.
   subheading: See our latest projects.
   client:
     - name: Appleton East Patriots
@@ -17,7 +17,7 @@ projects:
     - name: Ariens Co Brillion
       logo: ariens.jpg
 
-    - name: Bazil’s Pub & Provisions
+    - name: Bazil's Pub & Provisions
       logo: bazils-pub.jpg
 
     - name: Breakthrough Church Appleton
@@ -56,7 +56,7 @@ projects:
     - name: Oshkosh Country Club
       logo: oshkosh-country-club.jpg
 
-    - name: St. Mary’s Central School
+    - name: St. Mary's Central School
       logo: st.marys-school.jpg
 
     - name: The Bar on Lynndale
@@ -71,7 +71,7 @@ projects:
     - name: The Marq Banquet Center
       logo: the-marq.jpg
 
-    - name: TJ’s Harbor Bar and Restaurant
+    - name: TJ's Harbor Bar and Restaurant
       logo: tjs-restaurant.jpg
 
 blog:
