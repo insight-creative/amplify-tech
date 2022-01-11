@@ -85,8 +85,11 @@
 .short-hero {
   position: relative;
   margin-top: $mobileHeader;
-  height: 80vh;
   overflow: hidden;
+
+  @include breakpoint(md) {
+    height: 70vh;
+  }
 
   @include breakpoint(lg) {
     margin-top: $desktopHeader;
