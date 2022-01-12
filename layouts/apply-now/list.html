@@ -61,7 +61,7 @@
               <div class="contact-form__row-wrapper">
                 <div class="contact-form__form-group">
                   <label for="Zip">ZIP/Postal Code*</label>
-                  <input aria-label="Zip" name="Zip" type="text" class="contact-form__form-control" required>
+                  <input aria-label="Zip" name="Zip" type="number" class="contact-form__form-control" required>
                 </div>
                 <div class="contact-form__form-group">
                   <label for="Country">Country*</label>
@@ -73,16 +73,16 @@
               <p class="no-margin">Are you over the age of 18?*</p>
               <div class="visually-hidden">
                 <label for="are_you_over_the_age_of_18">Are you over the age of 18?</label>
-                <input aria-label="are_you_over_the_age_of_18" name="are_you_over_the_age_of_18" value="Are you over the age of 18?" />
+                <input aria-label="are_you_over_the_age_of_18" name="are_you_over_the_age_of_18"/>
               </div>
               <div class="contact-form__radio-wrapper flex">
                 <div class="contact-form__radio">
-                  <input aria-label="yes" id="yes" value="yes" name="age" type="radio" class="contact-form__form-control" required>
-                  <label for="yes">Yes</label>
+                  <input aria-label="Yes_im_over_the_age_of_18" id="Yes_im_over_the_age_of_18" value="Yes" name="age" type="radio" class="contact-form__form-control" required>
+                  <label for="Yes_im_over_the_age_of_18">Yes</label>
                 </div>
                 <div class="contact-form__radio">
-                  <input aria-label="no" id="no" value="no" name="age" type="radio" class="contact-form__form-control">
-                  <label for="no">No</label>
+                  <input aria-label="no_im_not_over_18" id="no_im_not_over_18" value="no" name="age" type="radio" class="contact-form__form-control">
+                  <label for="no_im_not_over_18">No</label>
                 </div>
               </div>
             </div>
@@ -90,16 +90,16 @@
               <p class="no-margin">Are you a U.S. citizen?*</p>
               <div class="visually-hidden">
                 <label for="Are_you_a_US_citizen">Are you a U.S. citizen?</label>
-                <input aria-label="Are_you_a_US_citizen" name="Are_you_a_US_citizen" value="Are you a U.S. citizen?" />
+                <input aria-label="Are_you_a_US_citizen" name="Are_you_a_US_citizen"/>
               </div>
               <div class="contact-form__radio-wrapper flex">
                 <div class="contact-form__radio">
-                  <input aria-label="yes" id="yes" name="citizen" type="radio" class="contact-form__form-control" required>
-                  <label for="yes">Yes</label>
+                  <input aria-label="yes_im_a_us_citizen" id="yes_im_a_us_citizen" name="yes_im_a_us_citizen" value="yes" type="radio" class="contact-form__form-control" required>
+                  <label for="yes_im_a_us_citizen">Yes</label>
                 </div>
                 <div class="contact-form__radio">
-                  <input aria-label="no" id="no" name="citizen" type="radio" class="contact-form__form-control">
-                  <label for="no">No</label>
+                  <input aria-label="no_im_not_a_us_citizen" id="no_im_not_a_us_citizen" name="no_im_not_a_us_citizen" value="no" type="radio" class="contact-form__form-control">
+                  <label for="no_im_not_a_us_citizen">No</label>
                 </div>
               </div>
             </div>
@@ -107,16 +107,16 @@
               <p class="no-margin">Have you ever been convicted of a felony?*</p>
               <div class="visually-hidden">
                 <label for="Have_you_ever_been_convicted_of_a_felony">Have you ever been convicted of a felony?</label>
-                <input aria-label="Have_you_ever_been_convicted_of_a_felony" name="Have_you_ever_been_convicted_of_a_felony" value="Have you ever been convicted of a felony?" />
+                <input aria-label="Have_you_ever_been_convicted_of_a_felony" name="Have_you_ever_been_convicted_of_a_felony"/>
               </div>
               <div class="contact-form__radio-wrapper flex">
                 <div class="contact-form__radio">
-                  <input aria-label="yes" id="yes" name="felony" type="radio" class="contact-form__form-control" required>
-                  <label for="yes">Yes</label>
+                  <input aria-label="yes_ive_been_convicted" id="yes_ive_been_convicted" name="yes_ive_been_convicted" type="radio" value="yes" class="contact-form__form-control" required>
+                  <label for="yes_ive_been_convicted">Yes</label>
                 </div>
                 <div class="contact-form__radio">
-                  <input aria-label="no" id="no" name="felony" type="radio" class="contact-form__form-control">
-                  <label for="no">No</label>
+                  <input aria-label="no_ive_never_been_convicted" id="no_ive_never_been_convicted" name="no_ive_never_been_convicted" type="radio" value="no" class="contact-form__form-control">
+                  <label for="no_ive_never_been_convicted">No</label>
                 </div>
               </div>
             </div>
@@ -147,7 +147,7 @@
               <div class="contact-form__row-wrapper">
                 <div class="contact-form__form-group">
                   <label for="High_School_Zip">ZIP/Postal Code</label>
-                  <input aria-label="High_School_Zip" name="High_School_Zip" type="text" class="contact-form__form-control">
+                  <input aria-label="High_School_Zip" name="High_School_Zip" type="number" class="contact-form__form-control">
                 </div>
                 <div class="contact-form__form-group">
                   <label for="High_School_Country">Country</label>
@@ -193,7 +193,7 @@
               <div class="contact-form__row-wrapper">
                 <div class="contact-form__form-group">
                   <label for="College_Zip">ZIP/Postal Code</label>
-                  <input aria-label="College_Zip" name="College_Zip" type="text" class="contact-form__form-control">
+                  <input aria-label="College_Zip" name="College_Zip" type="number" class="contact-form__form-control">
                 </div>
                 <div class="contact-form__form-group">
                   <label for="College_Country">Country</label>
@@ -240,7 +240,7 @@
               <div class="contact-form__row-wrapper">
                 <div class="contact-form__form-group">
                   <label for="Previous_Employer_1_Zip">ZIP/Postal Code</label>
-                  <input aria-label="Previous_Employer_1_Zip" name="Previous_Employer_1_Zip" type="text" class="contact-form__form-control">
+                  <input aria-label="Previous_Employer_1_Zip" name="Previous_Employer_1_Zip" type="number" class="contact-form__form-control">
                 </div>
                 <div class="contact-form__form-group">
                   <label for="Previous_Employer_1_Country">Country</label>
@@ -286,7 +286,7 @@
               <div class="contact-form__row-wrapper">
                 <div class="contact-form__form-group">
                   <label for="Previous_Employer_2_Zip">ZIP/Postal Code</label>
-                  <input aria-label="Previous_Employer_2_Zip" name="Previous_Employer_2_Zip" type="text" class="contact-form__form-control">
+                  <input aria-label="Previous_Employer_2_Zip" name="Previous_Employer_2_Zip" type="number" class="contact-form__form-control">
                 </div>
                 <div class="contact-form__form-group">
                   <label for="Previous_Employer_2_Country">Country</label>
