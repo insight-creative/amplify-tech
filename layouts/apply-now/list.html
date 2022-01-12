@@ -69,57 +69,51 @@
                 </div>
               </div>
             </div>
-            <div class="contact-form__form-row">
-              <p class="no-margin">Are you over the age of 18?*</p>
-              <div class="visually-hidden">
-                <label for="are_you_over_the_age_of_18"></label>
-                <input aria-label="are_you_over_the_age_of_18" name="are_you_over_the_age_of_18"/>
-              </div>
+            <fieldset class="contact-form__form-row">
+              <legend class="no-margin">Are you over the age of 18?*</legend>
               <div class="contact-form__radio-wrapper flex">
-                <div class="contact-form__radio">
-                  <input aria-label="Yes_im_over_the_age_of_18" id="Yes_im_over_the_age_of_18" value="Yes" name="age" type="radio" class="contact-form__form-control" required>
-                  <label for="Yes_im_over_the_age_of_18">Yes</label>
-                </div>
-                <div class="contact-form__radio">
-                  <input aria-label="no_im_not_over_18" id="no_im_not_over_18" value="no" name="age" type="radio" class="contact-form__form-control">
-                  <label for="no_im_not_over_18">No</label>
-                </div>
+                <p class="contact-form__radio no-margin">
+                  <label>
+                    <input type="radio" name="citizen" value="Yes, I'm over 18" required> Yes
+                  </label>
+                </p>
+                <p class="contact-form__radio no-margin">
+                  <label>
+                    <input type="radio" name="citizen" value="No, I'm not 18"> No
+                  </label>
+                </p>
               </div>
-            </div>
-            <div class="contact-form__form-row">
-              <p class="no-margin">Are you a U.S. citizen?*</p>
-              <div class="visually-hidden">
-                <label for="Are_you_a_US_citizen">Are you a U.S. citizen?</label>
-                <input aria-label="Are_you_a_US_citizen" name="Are_you_a_US_citizen"/>
-              </div>
+            </fieldset>
+            <fieldset class="contact-form__form-row">
+              <legend class="no-margin">Are you a U.S. citizen?*</legend>
               <div class="contact-form__radio-wrapper flex">
-                <div class="contact-form__radio">
-                  <input aria-label="yes_im_a_us_citizen" id="yes_im_a_us_citizen" name="citizen" value="yes" type="radio" class="contact-form__form-control" required>
-                  <label for="yes_im_a_us_citizen">Yes</label>
-                </div>
-                <div class="contact-form__radio">
-                  <input aria-label="no_im_not_a_us_citizen" id="no_im_not_a_us_citizen" name="citizen" value="no" type="radio" class="contact-form__form-control">
-                  <label for="no_im_not_a_us_citizen">No</label>
-                </div>
+                <p class="contact-form__radio no-margin">
+                  <label>
+                    <input type="radio" name="citizen" value="Yes, I'm a U.S. Citizen" required> Yes
+                  </label>
+                </p>
+                <p class="contact-form__radio no-margin">
+                  <label>
+                    <input type="radio" name="citizen" value="No, I'm not a U.S. Citizen"> No
+                  </label>
+                </p>
               </div>
-            </div>
-            <div class="contact-form__form-row">
-              <p class="no-margin">Have you ever been convicted of a felony?*</p>
-              <div class="visually-hidden">
-                <label for="Have_you_ever_been_convicted_of_a_felony">Have you ever been convicted of a felony?</label>
-                <input aria-label="Have_you_ever_been_convicted_of_a_felony" name="Have_you_ever_been_convicted_of_a_felony"/>
-              </div>
+            </fieldset>
+            <fieldset class="contact-form__form-row">
+              <legend class="no-margin">Have you ever been convicted of a felony?*</legend>
               <div class="contact-form__radio-wrapper flex">
-                <div class="contact-form__radio">
-                  <input aria-label="yes_ive_been_convicted" id="yes_ive_been_convicted" name="felony" type="radio" value="yes" class="contact-form__form-control" required>
-                  <label for="yes_ive_been_convicted">Yes</label>
-                </div>
-                <div class="contact-form__radio">
-                  <input aria-label="no_ive_never_been_convicted" id="no_ive_never_been_convicted" name="felony" type="radio" value="no" class="contact-form__form-control">
-                  <label for="no_ive_never_been_convicted">No</label>
-                </div>
+                <p class="contact-form__radio no-margin">
+                  <label>
+                    <input type="radio" name="citizen" value="Yes, I've been convicted of a felony" required> Yes
+                  </label>
+                </p>
+                <p class="contact-form__radio no-margin">
+                  <label>
+                    <input type="radio" name="citizen" value="No, I've not been convicted of a felony"> No
+                  </label>
+                </p>
               </div>
-            </div>
+            </fieldset>
             <h2 class="no-margin">Education</h2>
             <hr>
             <h3>High School</h3>

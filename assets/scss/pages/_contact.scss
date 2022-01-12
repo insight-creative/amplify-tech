@@ -82,6 +82,11 @@
     height: 6rem;
   }
 
+  fieldset {
+    border: none;
+    padding: 0;
+  }
+
   &__form-group textarea {
     height: 20rem;
   }
