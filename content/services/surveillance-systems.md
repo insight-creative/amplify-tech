@@ -10,7 +10,7 @@ intro:
   copy: Our professional and certified staff can help you make informed decisions when it comes to overseeing your property, employees and assets. With several models and features to choose from, we’ll design a custom system—featuring <a href="/services/commercial-grade-cameras/">commercial grade cameras</a>—to meet your needs. In most cases, our scalable technology can integrate with your existing cabling to provide the highest quality picture, reduce liability and increase peace of mind.
 
 offerings:
-  heading: "Amplified Surveillance System offerings:"
+  heading: "Features:"
   offering_list:
     - item: Security & manufacturing applications
     - item: 24/7 off-site monitoring

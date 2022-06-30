@@ -10,7 +10,7 @@ intro:
   copy: We offer the highest resolution cameras on the market! There are many useful applications including grounds security, theft protection, employee supervision or manufacturing production management. Our experienced and certified technicians use the most advanced technology to create surveillance systems that are dependable and durable in even the most challenging environments.
 
 offerings:
-  heading: "Amplified Commercial Grade Camera offerings:"
+  heading: "Features:"
   offering_list:
     - item: Warehouse/productivity management
     - item: Timestamped, archived receipt of activity

@@ -10,7 +10,7 @@ intro:
   copy: When managing sound, video and lighting for an event or place of business, ultimate control ensures the best experience. Our trained and certified technicians have decades of practice designing, installing and managing convenient setups for spaces of all sizes and situations. Whether it’s an outdoor athletic complex, indoor arena, house of worship, industrial facility or business setting, we understand that each space is different. And, we revel in a good challenge! Let us create advanced technical solutions to exceed your expectations for the space.
 
 offerings:
-  heading: "Amplified Audiovisual and Lighting Control offerings:"
+  heading: "Features:"
   offering_list:
     - item: Hi-def audio quality & clarity
     - item: Large-scale audio design, zoning & programming

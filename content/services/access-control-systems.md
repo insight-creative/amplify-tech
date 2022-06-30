@@ -12,7 +12,7 @@ intro:
   copy: Our professional and certified staff can help you make informed decisions when it comes to securing your property, employees and assets. Through careful examination of your current property and system, we’ll identify areas of vulnerability, then custom design convenient solutions using the latest technologies to meet your needs.
 
 offerings:
-  heading: "Amplified Access Control System offerings:"
+  heading: "Features:"
   offering_list:
     - item: Remotely controlled property access
     - item: Remote vehicle & personnel identification

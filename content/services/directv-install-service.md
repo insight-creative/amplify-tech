@@ -10,7 +10,7 @@ intro:
   copy: When it comes to commercial multi-room DirecTV distribution, our professional technicians can handle the entire process from installation to full operation so that you can focus on your business. With all distribution equipment contained to one convenient and compact space, the entire system is managed with ultimate control and energy efficiency.
 
 offerings:
-  heading: "Amplified Hospitality DirecTV Installation & Service offerings:"
+  heading: "Features:"
   offering_list:
     - item: "#1 provider in Wisconsin Hospitality"
     - item: Next Gen HD premium experience

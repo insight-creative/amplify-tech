@@ -296,6 +296,7 @@
   align-items: center;
   margin-right: 4rem;
   font-size: 1.8rem;
+  color: $secondaryColor;
 
   @include breakpoint(md) {
     display: flex;
@@ -320,6 +321,6 @@
   svg {
     width: 40px;
     margin-right: 1rem;
-    fill: $primaryColor;
+    fill: $secondaryColor;
   }
 }
